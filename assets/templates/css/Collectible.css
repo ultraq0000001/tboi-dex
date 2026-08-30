@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    }
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#main_container {
+  width: 415px; 
+  display: flex;
+  flex-direction: column;
+  /* background-image: url(../media/Full_Death_Note_clear.png); */
+  background-color: #9999A4; /* Mystic Gray (Classic Case) #9999A4 (RGB: 153, 153, 164) */
+}
+
+.item_name p {
+  font-family: 'TBOI_title_regular';
+  font-size: 34px;
+  color: #ffffff;
+  margin: 0;
+  
+}
+.item_name_text {
+  width: 300px;
+  height: 50px;
+  background-color: #000000;
+  display: block;
+  text-align: center;
+  /* line-height: 50px; */
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.item_quote {
+  text-align: center;
+}
+.item_quote_text {
+  width: 150px;
+  /* height: 100px; */
+  background-color: #ffffff85;
+  display: block;
+  text-align: center;
+  /* line-height: 100px; */
+  margin: 0 auto;
+}
+.item_quote p {
+    font-family: 'TBOI_quote_regular';
+    font-size: 18px;
+    color: #000000;
+    margin: 0;
+}
+.item_container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.item_image {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; 
+  background-color: #71a809;
+  width: 270px;
+  border: 15px solid #3b3a3a;
+  border-radius: 10px;
+}
+.item_image img {
+  image-rendering: pixelated;
+  margin-top: 20px;
+  width: 120px;
+  height: 120px; 
+  flex: 1;
+  align-self:center
+}
+
+.floating-item {
+  animation: bob-vertical 1.2s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes bob-vertical {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.item_image span {
+  position: relative;
+  margin-top: -40px;
+  width: 70px; 
+  height: 70px;
+  /* background-color: #000000; */
+  align-self: center;
+  margin-bottom: 30px;
+}
+.item_image span img{
+  width: 70px; 
+  image-rendering: pixelated;
+  /* background-image: url(../media/Item_altar.webp); */
+  /* background-size: cover; */
+  height: 70px;
+  
+}
+.item_info {
+  width: 270px;
+  background-color: #ffffff85;
+  /* border: 15px solid #3b3a3a; */
+  /* border-radius: 10px; */
+  margin-top: 20px;
+  padding: 10px;
+}
+.item_info p {
+  font-size: 18px;
+  color: #000000;
+  font-family: 'TBOI_title_2_regular';
+  /* width: 270px; */
+  /* background-color: #000000; */
+  /* border: 15px solid #3b3a3a; */
+  /* border-radius: 10px; */
+  /* margin-top: 20px; */
+  /* padding: 10px; */
+
+}
+@font-face {
+    font-family: 'TBOI_title_regular';
+    src: url('../font/upheavtt.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TBOI_quote_regular';
+  src: url('../font/ISAACFONTDESCRIPTIONENGRUS-OUTLINE_0.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'TBOI_title_2_regular';
+    src: url('../font/TBOI_Body_Regular.otf') format('truetype');
+}
+@font-face {
+    font-family: 'TBOI_body_regular';
+    src: url('../font/TBOI_body_regular.ttf') format('truetype');
+}
