@@ -44,4 +44,5 @@ yarn-error.*
 assets/icons/
 
 # do not track utils
-utils/
+scripts/data-transformer/
+scripts/parser/

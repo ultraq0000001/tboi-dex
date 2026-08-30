@@ -1,20 +1,53 @@
-import { Item } from '../types/item';
-import { transformItemToJson } from './items-helpers';
+import itemsData from './items_rebirth.json';
+import { iconFilenameForItem } from './generatedItemIcons';
+import type { Item, ItemType } from '../types/item';
 
-/**
- * Produces the array of Item objects.
- */
-export async function loadItemsFromJson(): Promise<Item[]> {
-  // NOTE: This is a placeholder - in production this would dynamically parse items_rebirth.json
-  // React Native/Expo requires different loading approaches, so JSON data is typically either:
-  // 1. Imported statically during bundling (preferred for static assets)
-  // 2. Loaded via expo-file-system API (for dynamic file access)
-  // 
-  // To load from items_rebirth.json in React Native context, use the transformItemToJson helper
-  // combined with expo-file-system's getDirectoryFilePath().
-  return [];
+export type { Item };
+
+interface RawItem {
+  id: number;
+  name?: string;
+  type?: string;
+  quality?: number | string;
+  description?: string;
+  quote?: string;
+  item_pool?: string[];
+  image?: string;
+  clean_name?: string;
+  tags?: string[];
 }
 
-// Type exports
-export type { Item };
-export const items: Item[] = [];
+function toType(type: string | undefined): ItemType {
+  return type === 'active' || type === 'familiar' || type === 'trinket'
+    ? type
+    : 'passive';
+}
+
+function toSlug(name: string, fallbackId: number): string {
+  const base = name
+    .replace(/'/g, '')
+    .replace(/[^a-zA-Z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .toLowerCase();
+  return base || `item-${fallbackId}`;
+}
+
+function toQuality(raw: number | string | undefined): 0 | 1 | 2 | 3 | 4 {
+  const q = parseInt(String(raw), 10);
+  if (q < 0) return 0;
+  if (q > 4) return 4;
+  return q as 0 | 1 | 2 | 3 | 4;
+}
+
+export const items: Item[] = (itemsData as RawItem[]).map((raw, index) => ({
+  id: toSlug(raw.name ?? '', raw.id ?? index),
+  name: raw.name ?? 'Unknown Item',
+  type: toType(raw.type),
+  quality: toQuality(raw.quality),
+  description: raw.description ?? '',
+  quote: raw.quote,
+  pools: Array.isArray(raw.item_pool) ? raw.item_pool.filter((p): p is string => typeof p === 'string') : [],
+  unlock: 'Starts unlocked',
+  iconKey: iconFilenameForItem(raw) ?? '',
+  tags: raw.tags,
+}));

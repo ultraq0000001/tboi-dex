@@ -1,23 +1,5 @@
 export type ItemType = 'passive' | 'active' | 'trinket' | 'familiar';
 
-export type ItemPool =
-  | 'Treasure Room'
-  | 'Boss Room'
-  | 'Shop'
-  | 'Devil Room'
-  | 'Angel Room'
-  | 'Secret Room'
-  | 'Library'
-  | 'Curse Room'
-  | 'Golden Chest'
-  | 'Red Chest'
-  | 'Beggar'
-  | 'Demon Beggar'
-  | 'Greed Mode'
-  | 'Ultra Secret Room'
-  | 'Planetarium'
-  | 'Baby Shop';
-
 export interface Item {
   /** Unique slug identifier, e.g. "sad_onion" */
   id: string;
@@ -28,10 +10,11 @@ export interface Item {
   description: string;
   /** Flavor text shown on the item pedestal / Book of Belial style quote */
   quote?: string;
-  pools: ItemPool[];
+  /** Item pools the item can appear in, e.g. "Treasure Room" */
+  pools: string[];
   /** How the item is unlocked, e.g. "Starts unlocked" or achievement name */
   unlock: string;
-  /** Local asset key resolved in src/data/itemIcons.ts */
+  /** Icon filename resolved against src/data/generatedItemIcons.ts */
   iconKey: string;
   tags?: string[];
 }
