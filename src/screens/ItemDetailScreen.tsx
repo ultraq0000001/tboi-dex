@@ -1,7 +1,7 @@
-import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { items } from '../data/items';
-import { itemIcons } from '../data/itemIcons';
+import { PixelIcon } from '../components/PixelIcon';
 import { QualityStars } from '../components/QualityStars';
 import { RootStackParamList } from '../types/navigation';
 
@@ -25,11 +25,16 @@ export function ItemDetailScreen({ route }: Props) {
     );
   }
 
-  const icon = itemIcons[item.iconKey];
+  const initials = item.name
+    .replace(/^(The|A)\s+/i, '')
+    .slice(0, 2)
+    .toUpperCase();
 
   return (
     <ScrollView style={styles.container} contentContainerStyle={styles.content}>
-      {icon && <Image source={icon} style={styles.icon} resizeMode="contain" />}
+      <View style={styles.iconWrap}>
+        <PixelIcon iconKey={item.iconKey} size={96} initials={initials} />
+      </View>
       <Text style={styles.name}>{item.name}</Text>
       <Text style={styles.type}>{TYPE_LABELS[item.type]}</Text>
       <QualityStars quality={item.quality} />
@@ -56,7 +61,7 @@ const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#121212' },
   content: { padding: 20 },
   missing: { color: '#888', textAlign: 'center', marginTop: 40 },
-  icon: { width: 96, height: 96, marginBottom: 12, alignSelf: 'center' },
+  iconWrap: { alignItems: 'center', marginBottom: 12 },
   name: { color: '#fff', fontSize: 26, fontWeight: '700' },
   type: { color: '#888', fontSize: 14, marginTop: 4, marginBottom: 10 },
   sectionLabel: {

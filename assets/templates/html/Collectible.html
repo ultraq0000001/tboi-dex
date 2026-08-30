@@ -1,170 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><@Itemname></title>
-</head>
-<style>
-    @font-face {
-        font-family: 'terminal_grotesque';
-        src: url('../font/terminal_grotesque_open.otf') format('truetype');
-    }
-    @font-face {
-        font-family: 'ISAACFONTDESCRIPTIONENGRUS';
-        src: url('../font/ISAACFONTDESCRIPTIONENGRUS-ORIGINAL-SVG_0.ttf') format('truetype');
-    }
-    @font-face {
-        font-family: 'Koganejidainogemu';
-        src: url('../font/Koganejidainogemu.ttf') format('truetype');
-    }
-    @font-face {
-        font-family: 'MatrixType';
-        src: url('../font/MatrixTypeDisplay-Bold.otf') format('truetype');
-    }
-    @font-face {
-        font-family: 'TokushupikuseruRegular';
-        src: url('../font/TokushupikuseruRegular.otf') format('truetype');
-    }
-    @font-face {
-        font-family: 'DirtyHarold';
-        src: url('../font/DirtyHarold.otf') format('truetype');
-    }
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    .flex-column {
-        flex: 1;
-    }
-    #main_container {
-        height: 800px; 
-        width: 415px; 
-        /* background-image: url(../media/Full_Death_Note_clear.png); */
-        background-color: #9999A4; /* Mystic Gray (Classic Case) #9999A4 (RGB: 153, 153, 164) */
-        text-align: center;
-    }
-
-    .head {
-        display: block;
-    }
-    .item_name {
-        text-align: center;
-        padding: 20px;
-    }
-    .item_name p {
-        font-family: 'Koganejidainogemu', sans-serif;
-        font-size: 35px;
-        color: #000;
-    }
-    .item_desc {
-        padding: 20px;
-        text-align: center;
-    }   
-    .item_desc p {
-        font-family: 'TokushupikuseruRegular', sans-serif;
-        font-size: 35px; 
-        color: #fff;
-        background-color: rgba(5, 5, 5, 0.75);
-    }
-
-
-    .info {
-        /* padding: 50px; */
-        /* background-color: #72727a; */
-        display: flex;
-        flex-direction: row;      
-        align-items: start;   
-        width: 100%;
-    }
-    .item_data {
-        text-align: left;
-        
-    }
-    .item_data p {color: #000;
-        margin-left: 10px;
-        margin-bottom: 10px;
-
-        
-    }
-    .item_data span p:first-child {
-        font-family: 'MatrixType', sans-serif;
-        font-size: 20px;
-        /* font-weight: bold; */
-        text-transform: uppercase;
-    }
-    .item_data span p:nth-child(2) {
-        font-size: 16px;
-        font-family: 'DirtyHarold', sans-serif;
-        /* margin-top: 10px; */
-    }
-    
-    .item_media {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-    }
-    
-    
-    .item_media img {
-        image-rendering: pixelated;
-        width: 100px; 
-        flex: 1;
-        align-self: center;
-        
-    }
-    .item_media span {
-        background-color: #8BAC0F;
-        margin-bottom: 10px;
-        margin-right: 10px;
-
-    }
-    .item_media p {
-        font-family: 'TokushupikuseruRegular', sans-serif;
-        font-size: 20px; 
-        color: #fff;
-        background-color: rgba(5, 5, 5, 0.75);
-        
-    }
-    .appearance {
-        image-rendering: pixelated;
-        flex: 1;
-        align-self: center;
-    }
-    
-    
-</style>
-<body>
-    <div id="main_container" class="static">
-        <div class="head">
-            <span class="item_name"><p>Experimental Treatment</p></span>
-            <span class="item_desc"><p>Some stats up, some stats down</p></span>
-        </div>   
-        <div class="info">
-            <div class="flex-column item_data">
-                <span>
-                    <p>Description</p>
-                    <p>Grants 4 random stat increases and 2 random stat decreases. Each stat can change for a fixed amount: ±1 heart container. ±1 flat damage. ±0.5 fire rate. ±2.5 range. ±0.2 shot speed. ±0.2 speed. ±1 luck. Grants 4 random stat increases and 2 random stat decreases. Each stat can change for a fixed amount: ±1 heart container. ±1 flat damage. ±0.5 fire rate. ±2.5 range. ±0.2 shot speed. ±0.2 speed. ±1 luck. Grants 4 random stat increases and 2 random stat decreases. Each stat can change for a fixed amount: ±1 heart container. ±1 flat damage. ±0.5 fire rate. ±2.5 range. ±0.2 shot speed. ±0.2 speed. ±1 luck.</p>
-                </span>
-            </div>
-            <div class="flex-column item_media">
-                <span>
-                    <p>item icon</p><img class="icon" src="../../icons/items/Collectible/Collectible_Experimental_Treatment_icon.png" alt="">
-                </span>
-                <span>
-                    <p>character transfrm</p><img class="appearance" src="../../icons/items/Appearance/30px-Character_Tainted_Lazarus_appearance.png" alt="">
-                </span>
-                <span>
-                    <p>item stats</p>
-                    <table>
-                    <tr><td>Type</td><td>Passive</td></tr>
-                    <tr><td>Qality</td><td>1</td></tr>
-                    <tr><td>Recharge</td><td>NaN</td></tr>
-                    </table>
-                </span>
-            </div>
+    <link rel="stylesheet" href="../css/Collectible.css">
+    <title>The Sad Onion</title>
+  </head>
+  <body>
+    <div id="main_container">
+      <div class="head">
+        <div id="name" class="item_name">
+          <span class="item_name_text"><p>The Sad Onion</p></span>
         </div>
-    </div>
-</body>
+        <div id="quote" class="item_quote">
+          <span class="item_quote_text"><p>Tears up</p></span>
+        </div>
+      </div>
+      <div class="item_container">
+        <div class="item_image pedestal">
+          <img class="floating-item" src="../../media/Collectibles/Collectible_The_Sad_Onion_icon.png" alt="The Sad Onion">
+          <span class="item_pedestal"><img src="../media/Item_altar.webp" alt=""></span>  
+        </div>
+        <div class="item_info">
+          <p class="item_description">The Sad Onion is a passive item that increases the player's tear rate, allowing them to shoot tears more frequently. It is often found in the first floor of the game and is a popular choice for players looking to enhance their offensive capabilities early on.</p>
+        </div>
+      </div>
+  </body>
 </html>

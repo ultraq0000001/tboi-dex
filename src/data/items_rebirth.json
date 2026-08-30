@@ -7,7 +7,11 @@
     "type": "passive",
     "main_type": "item",
     "quality": "3",
-    "tags": ["summonable", "tearsup", "offensive"],
+    "tags": [
+      "summonable",
+      "tearsup",
+      "offensive"
+    ],
     "transformations": "",
     "appearance": "The_Sad_Onion_Appearance.webp",
     "image": "Collectible_The_Sad_Onion_icon.png",
@@ -62,7 +66,8 @@
         "item": "Abyss",
         "details": "Spawns 3 red locusts that are linked to each other."
       }
-    ]
+    ],
+    "quote": "Triple shot"
   },
   {
     "name": "Spoon Bender",
@@ -100,7 +105,8 @@
         "item": "Abyss",
         "details": "Spawns a purple locust that homes in on enemies."
       }
-    ]
+    ],
+    "quote": "Homing shots"
   },
   {
     "name": "Cricket's Head",
@@ -138,7 +144,8 @@
         "item": "Abyss",
         "details": "Spawns a locust that is 25% larger and deals 2x damage."
       }
-    ]
+    ],
+    "quote": "DMG up"
   },
   {
     "name": "My Reflection",
@@ -170,7 +177,8 @@
       "Crane Game"
     ],
     "item_effect": "+1.5 damage. ×2 range multiplier. +1.5 range. ×1.6 shot speed multiplier. -1 luck. Makes Isaac's tears pull back to his direction after traveling a short distance.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Boomerang tears + DMG up + luck down"
   },
   {
     "name": "Number One",
@@ -207,7 +215,8 @@
         "item": "Abyss",
         "details": "Spawns a locust that is 30% faster but very limited in range. It deals damage once every 5 ticks instead of 7."
       }
-    ]
+    ],
+    "quote": "Tears up + range down"
   },
   {
     "name": "Blood of the Martyr",
@@ -252,7 +261,8 @@
         "item": "Abyss",
         "details": "Spawns a locust that deals 2x damage."
       }
-    ]
+    ],
+    "quote": "DMG up"
   },
   {
     "name": "Brother Bobby",
@@ -290,7 +300,8 @@
         "item": "BFFS!",
         "details": "×2 damage."
       }
-    ]
+    ],
+    "quote": "Friends 'till the end"
   },
   {
     "name": "Skatole",
@@ -326,7 +337,8 @@
         "item": "Abyss",
         "details": "Grants a locust that has a 20% chance to turn enemies into poop."
       }
-    ]
+    ],
+    "quote": "Fly love"
   },
   {
     "name": "Halo of Flies",
@@ -365,7 +377,8 @@
         "item": "Abyss",
         "details": "Spawns 2 cyan locusts that are linked to each other, and have a chance to destroy enemy projectiles upon contact."
       }
-    ]
+    ],
+    "quote": "Projectile protection"
   },
   {
     "name": "1up!",
@@ -397,7 +410,8 @@
       "Greed Secret Room"
     ],
     "item_effect": "+1 extra life. Grants a familiar that follows Isaac. Respawns Isaac with full health in the previous room, or half a soul heart if he has no red heart containers. The item is removed from Isaac's inventory after it respawns Isaac.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Extra life"
   },
   {
     "name": "Magic Mushroom",
@@ -436,7 +450,8 @@
         "item": "Abyss",
         "details": "Spawns a red locust that is 25% larger."
       }
-    ]
+    ],
+    "quote": "All stats up!"
   },
   {
     "name": "The Virus",
@@ -475,7 +490,8 @@
         "item": "Abyss",
         "details": "Spawns a green locust that has a chance to poison enemies."
       }
-    ]
+    ],
+    "quote": "Poison touch + speed up"
   },
   {
     "name": "Roid Rage",
@@ -508,7 +524,8 @@
       "Greed Boss Room"
     ],
     "item_effect": "+0.3 speed. +2.5 range.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Speed and range up"
   },
   {
     "name": "<3",
@@ -540,7 +557,8 @@
       "Ultra Secret Room"
     ],
     "item_effect": "+1 full Red Heart container. Fully heals Isaac. Can drop from the Gluttony mini-boss.",
-    "synergy": []
+    "synergy": [],
+    "quote": "HP up"
   },
   {
     "name": "Raw Liver",
@@ -572,7 +590,8 @@
       "Greed Secret Room"
     ],
     "item_effect": "+2 Red Heart containers. Fully heals Isaac.",
-    "synergy": []
+    "synergy": [],
+    "quote": "HP up"
   },
   {
     "name": "Skeleton Key",
@@ -606,7 +625,8 @@
       "Greed Secret Room"
     ],
     "item_effect": "+99 keys.",
-    "synergy": []
+    "synergy": [],
+    "quote": "99 keys"
   },
   {
     "name": "A Dollar",
@@ -634,7 +654,8 @@
     "charge_time": "",
     "item_pool": [],
     "item_effect": "+100¢. Can only be dropped as a final reward from a Slot Machine .",
-    "synergy": []
+    "synergy": [],
+    "quote": "$$$"
   },
   {
     "name": "Boom!",
@@ -671,7 +692,8 @@
         "item": "Abyss",
         "details": "Spawns a yellow locust that has a chance to explode upon enemy contact, dealing 40 damage."
       }
-    ]
+    ],
+    "quote": "10 bombs"
   },
   {
     "name": "Transcendence",
@@ -702,7 +724,8 @@
       "Greed Secret Room"
     ],
     "item_effect": "Grants flight.",
-    "synergy": []
+    "synergy": [],
+    "quote": "We all float down here..."
   },
   {
     "name": "The Compass",
@@ -734,7 +757,8 @@
       "Crane Game"
     ],
     "item_effect": "Shows the icons of all special rooms on the map, excluding secret rooms. Reveals if Greed / Super Greed has replaced the shop or a secret room by displaying a mini-boss icon instead of the normal one. Its effects appear as an icon next to the map.",
-    "synergy": []
+    "synergy": [],
+    "quote": "The end is near"
   },
   {
     "name": "Lunch",
@@ -766,7 +790,8 @@
       "Greed Boss Room"
     ],
     "item_effect": "+1 full Red Heart container. Heals 1 red heart container.",
-    "synergy": []
+    "synergy": [],
+    "quote": "HP up"
   },
   {
     "name": "Dinner",
@@ -798,7 +823,8 @@
       "Greed Boss Room"
     ],
     "item_effect": "+1 full Red Heart container. Heals 1 red heart container.",
-    "synergy": []
+    "synergy": [],
+    "quote": "HP up"
   },
   {
     "name": "Dessert",
@@ -830,7 +856,8 @@
       "Greed Boss Room"
     ],
     "item_effect": "+1 full Red Heart container. Heals 1 red heart container.",
-    "synergy": []
+    "synergy": [],
+    "quote": "HP up"
   },
   {
     "name": "Breakfast",
@@ -862,7 +889,8 @@
       "Greed Boss Room"
     ],
     "item_effect": "+1 full Red Heart container. Heals 1 red heart container. Can spawn once the Treasure Room item pool has been exhausted. When other pools are exhausted, they will use the Treasure Room item pool.",
-    "synergy": []
+    "synergy": [],
+    "quote": "HP up"
   },
   {
     "name": "Rotten Meat",
@@ -895,7 +923,8 @@
       "Rotten Beggar"
     ],
     "item_effect": "+1 full Red Heart container. Heals 1 red heart container. Can drop from destroying polyps in Corpse.",
-    "synergy": []
+    "synergy": [],
+    "quote": "HP up"
   },
   {
     "name": "Wooden Spoon",
@@ -927,7 +956,8 @@
       "Wooden Chest"
     ],
     "item_effect": "+0.3 speed.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Speed up"
   },
   {
     "name": "The Belt",
@@ -959,7 +989,8 @@
       "Greed Boss Room"
     ],
     "item_effect": "+0.3 speed.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Speed up"
   },
   {
     "name": "Mom's Underwear",
@@ -993,7 +1024,8 @@
       "Old Chest"
     ],
     "item_effect": "On pickup Spawns 3-6 Blue Flies upon pickup. While held +2.5 range.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Range up"
   },
   {
     "name": "Mom's Heels",
@@ -1027,7 +1059,8 @@
       "Old Chest"
     ],
     "item_effect": "+2.5 range. Makes Isaac deal 12 contact damage per tick (24 damage per second).",
-    "synergy": []
+    "synergy": [],
+    "quote": "Range up"
   },
   {
     "name": "Mom's Lipstick",
@@ -1061,7 +1094,8 @@
       "Old Chest"
     ],
     "item_effect": "On pickup Spawns a random heart. While held +3.75 range.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Range up"
   },
   {
     "name": "Wire Coat Hanger",
@@ -1094,7 +1128,8 @@
       "Crane Game"
     ],
     "item_effect": "+0.7 tears.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Tears up"
   },
   {
     "name": "The Bible",
@@ -1133,7 +1168,8 @@
         "item": "Book of Virtues",
         "details": "Spawns white wisps in the inner ring.Wisps' tears have 0.75 shot speed and effectively act as though they have  Sacred Heart."
       }
-    ]
+    ],
+    "quote": "Temporary flight"
   },
   {
     "name": "The Book of Belial",
@@ -1177,7 +1213,8 @@
         "item": "Blood of the Martyr",
         "details": "x1.5 damage multiplier."
       }
-    ]
+    ],
+    "quote": "Temporary DMG up"
   },
   {
     "name": "The Necronomicon",
@@ -1223,7 +1260,8 @@
         "item": "Abyss",
         "details": "Grants a locust that has a 10% chance to trigger the Necronomicon effect upon enemy contact."
       }
-    ]
+    ],
+    "quote": "Mass room damage"
   },
   {
     "name": "The Poop",
@@ -1266,7 +1304,8 @@
         "item": "Abyss",
         "details": "Grants a locust that has a 20% chance to turn enemies into poop."
       }
-    ]
+    ],
+    "quote": "Plop!"
   },
   {
     "name": "Mr. Boom",
@@ -1309,7 +1348,8 @@
         "item": "Abyss",
         "details": "Spawns a yellow locust that has a 30% chance to explode upon enemy contact, dealing 40 damage."
       }
-    ]
+    ],
+    "quote": "Reusable bomb buddy"
   },
   {
     "name": "Tammy's Head",
@@ -1347,7 +1387,8 @@
         "item": "Book of Virtues",
         "details": "Spawns pale wisps in the outer ring.Wisps' tears deal 1.5 damage but fire twice as fast than standard wisps.Tears are inaccurate and fire in a spread."
       }
-    ]
+    ],
+    "quote": "Reusable tear burst"
   },
   {
     "name": "Mom's Bra",
@@ -1391,7 +1432,8 @@
         "item": "Abyss",
         "details": "Spawns a grey locust that has a chance to petirfy enemies."
       }
-    ]
+    ],
+    "quote": "Mass paralysis"
   },
   {
     "name": "Kamikaze!",
@@ -1439,7 +1481,8 @@
         "item": "Abyss",
         "details": "Spawns a yellow locust that has a 30% chance to explode upon enemy contact, dealing 40 damage."
       }
-    ]
+    ],
+    "quote": "Become the bomb!"
   },
   {
     "name": "Mom's Pad",
@@ -1483,7 +1526,8 @@
         "item": "Abyss",
         "details": "Spawns a black locust that has a chance to apply fear to enemies."
       }
-    ]
+    ],
+    "quote": "Mass fear"
   },
   {
     "name": "Bob's Rotten Head",
@@ -1526,7 +1570,8 @@
         "item": "Abyss",
         "details": "Grants a locust that has a 30% chance to poison enemies, and a chance to explode upon enemy contact."
       }
-    ]
+    ],
+    "quote": "Reusable ranged bomb"
   },
   {
     "name": "Teleport!",
@@ -1563,7 +1608,8 @@
         "item": "Book of Virtues",
         "details": "Spawns blue wisps in the middle ring.Wisps' tears have a 10% chance of teleporting non-boss enemies to a random location in the current room.Wisps temporarily vanish every 5 seconds, preventing them from blocking shots or taking/dealing damage."
       }
-    ]
+    ],
+    "quote": "Teleport!"
   },
   {
     "name": "Yum Heart",
@@ -1601,7 +1647,8 @@
         "item": "Book of Virtues",
         "details": "Spawns red heart wisps in the middle ring.Enemies killed by the wisps' tears have a 20% chance to drop a full red heart."
       }
-    ]
+    ],
+    "quote": "Reusable regeneration"
   },
   {
     "name": "Lucky Foot",
@@ -1634,7 +1681,8 @@
       "Crane Game"
     ],
     "item_effect": "+1 luck. Increases the chances of winning at Slot Machines , Shell Games , Fortune Telling Machines , and Confessionals . Increases the chance of getting a room-clear reward. Converts all negative pills into their positive counterparts, but does not identify them like PHD does.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Luck up"
   },
   {
     "name": "Doctor's Remote",
@@ -1677,7 +1725,8 @@
         "item": "Abyss",
         "details": "Spawns a yellow locust that has a 30% chance to explode upon enemy contact, dealing 40 damage."
       }
-    ]
+    ],
+    "quote": "Reusable air strike"
   },
   {
     "name": "Cupid's Arrow",
@@ -1709,7 +1758,8 @@
       "Crane Game"
     ],
     "item_effect": "Grants piercing tears that travel through enemies.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Piercing shots"
   },
   {
     "name": "Shoop da Whoop!",
@@ -1748,7 +1798,8 @@
         "item": "Book of Virtues",
         "details": "Spawns white wisps in the outer ring.Wisps fire lasers when Shoop da Whoop is used that deal 7 damage per tick and can hit enemies up to 10 times."
       }
-    ]
+    ],
+    "quote": "BLLLARRRRGGG!"
   },
   {
     "name": "Steven",
@@ -1778,7 +1829,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "+1 damage. Has a 16.6% chance to drop from the Steven boss.",
-    "synergy": []
+    "synergy": [],
+    "quote": "DMG up"
   },
   {
     "name": "Pentagram",
@@ -1816,7 +1868,8 @@
       "Ultra Secret Room"
     ],
     "item_effect": "+1 damage. +10% chance to spawn a devil/angel deal.",
-    "synergy": []
+    "synergy": [],
+    "quote": "DMG up"
   },
   {
     "name": "Dr. Fetus",
@@ -1853,7 +1906,8 @@
         "item": "Abyss",
         "details": "Spawns a yellow locust that has a 50% chance to explode upon enemy contact, dealing 40 damage."
       }
-    ]
+    ],
+    "quote": "???"
   },
   {
     "name": "Magneto",
@@ -1890,7 +1944,8 @@
         "item": "Abyss",
         "details": "Spawns a grey locust that has a chance to magnetize enemies."
       }
-    ]
+    ],
+    "quote": "Item snatcher"
   },
   {
     "name": "Treasure Map",
@@ -1921,7 +1976,8 @@
       "Beggar"
     ],
     "item_effect": "Reveals the map layout without showing the icons.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Full visible map"
   },
   {
     "name": "Mom's Eye",
@@ -1954,7 +2010,8 @@
       "Old Chest"
     ],
     "item_effect": "Gives Isaac a chance to simultaneously shoot a tear out of an eye on the back of his head. The chance starts at 50% with 0 luck and goes up to 100% with 5 luck.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Eye in the back of your head"
   },
   {
     "name": "Lemon Mishap",
@@ -1991,7 +2048,8 @@
         "item": "Book of Virtues",
         "details": "Spawns yellow wisps in the middle ring.Wisps fire faster and have decreased range. They occasionally leave small creep puddles that last for 3 seconds and deal 7 damage per tick to enemies that walk over them (56 damage per second)."
       }
-    ]
+    ],
+    "quote": "Oops..."
   },
   {
     "name": "Distant Admiration",
@@ -2030,7 +2088,8 @@
         "item": "BFFS!",
         "details": "×2 damage."
       }
-    ]
+    ],
+    "quote": "Attack fly"
   },
   {
     "name": "Book of Shadows",
@@ -2072,7 +2131,8 @@
         "item": "Abyss",
         "details": "Spawns a cyan locust that has a 30% chance to destroy enemy projectiles upon contact."
       }
-    ]
+    ],
+    "quote": "Temporary invincibility"
   },
   {
     "name": "The Ladder",
@@ -2103,7 +2163,8 @@
       "Wooden Chest"
     ],
     "item_effect": "Places a ladder across one-square gaps, allowing Isaac to walk over. Enemies cannot walk over the ladder.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Building bridges"
   },
   {
     "name": "Charm of the Vampire",
@@ -2140,7 +2201,8 @@
         "item": "Abyss",
         "details": "Spawns a red locust that has a chance to apply bleed to enemies."
       }
-    ]
+    ],
+    "quote": "DMG up + kills heal"
   },
   {
     "name": "The Battery",
@@ -2179,7 +2241,8 @@
         "item": "Abyss",
         "details": "Spawns an electrical cyan locust that has a chance to chain-zap enemies similar to the effects of  Jacob's Ladder. Zaps deal 0.1 damage."
       }
-    ]
+    ],
+    "quote": "Stores energy"
   },
   {
     "name": "Steam Sale",
@@ -2210,7 +2273,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "Cuts in half the price of all items that can be purchased with money. Items that cost 15¢ are reduced to 7¢, while pickups that cost 5¢ are reduced to 3¢. Picking up multiple copies of Steam Sale will further reduce the price, with each copy lowering prices less. The following formula is applied: price / (SteamSaleCopies + 1) . Prevents shops from having natural discounts on top of the Steam Sale discount. Can be dropped as a rare drop from shopkeepers, as well as from the Greed mini-boss, and from the Super Greed mini-boss before unlocking A Quarter .",
-    "synergy": []
+    "synergy": [],
+    "quote": "50% off"
   },
   {
     "name": "Anarchist Cookbook",
@@ -2253,7 +2317,8 @@
         "item": "Abyss",
         "details": "Spawns a yellow locust that has a 30% chance to explode upon enemy contact, dealing 40 damage."
       }
-    ]
+    ],
+    "quote": "Summon bombs"
   },
   {
     "name": "The Hourglass",
@@ -2296,7 +2361,8 @@
         "item": "Abyss",
         "details": "Spawns a light grey locust that has a chance to slow enemies."
       }
-    ]
+    ],
+    "quote": "Temporary enemy slowdown"
   },
   {
     "name": "Sister Maggy",
@@ -2335,7 +2401,8 @@
         "item": "BFFS!",
         "details": "×2 damage."
       }
-    ]
+    ],
+    "quote": "Friends 'till the end"
   },
   {
     "name": "Technology",
@@ -2374,7 +2441,8 @@
         "item": "Abyss",
         "details": "Spawns an electrical cyan locust that has a chance to chain-zap enemies similar to the effects of  Jacob's Ladder. Zaps deal 0.1 damage."
       }
-    ]
+    ],
+    "quote": "Laser tears"
   },
   {
     "name": "Chocolate Milk",
@@ -2411,7 +2479,8 @@
         "item": "Abyss",
         "details": "Spawns a red locust that is 25% larger."
       }
-    ]
+    ],
+    "quote": "Charge shots"
   },
   {
     "name": "Growth Hormones",
@@ -2443,7 +2512,8 @@
       "Greed Boss Room"
     ],
     "item_effect": "+1 damage. +0.2 speed.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Speed + DMG up"
   },
   {
     "name": "Mini Mush",
@@ -2480,7 +2550,8 @@
         "item": "Abyss",
         "details": "Spawns a red locust that is 50% smaller."
       }
-    ]
+    ],
+    "quote": "Speed + range up"
   },
   {
     "name": "Rosary",
@@ -2513,7 +2584,8 @@
       "Ultra Secret Room"
     ],
     "item_effect": "+3 Soul Hearts. +0.5 tears. Adds 5 copies of The Bible to all item pools, unless it has previously been picked up. The Bible can be found multiple times even in the same pool unless it is picked up, after which it is removed from everywhere.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Tears + faith up"
   },
   {
     "name": "Cube of Meat",
@@ -2557,7 +2629,8 @@
         "item": "Abyss",
         "details": "Spawns a cyan locust that has a 50% chance to destroy enemy projectiles upon contact."
       }
-    ]
+    ],
+    "quote": "Gotta meat 'em all"
   },
   {
     "name": "A Quarter",
@@ -2589,7 +2662,8 @@
       "Greed Devil Room"
     ],
     "item_effect": "+25¢. Can drop from destroying urns or killing Super Greed.",
-    "synergy": []
+    "synergy": [],
+    "quote": "+25 coins"
   },
   {
     "name": "PHD",
@@ -2621,7 +2695,8 @@
       "Greed Shop"
     ],
     "item_effect": "On pickup Heals 2 red hearts. Spawns a random pill on the ground. While held Identifies all pills upon pickup. Converts negative pills into their positive counterparts or removes their negative effects. Adds 0-2 coins to the payout every time a Blood Donation Machine or IV Bag is used. In Hard Mode, adds exactly 1 coin to the payout.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Better pills"
   },
   {
     "name": "X-Ray Vision",
@@ -2652,7 +2727,8 @@
       "Greed Shop"
     ],
     "item_effect": "Permanently opens up Secret Room and Super Secret Room entrances.",
-    "synergy": []
+    "synergy": [],
+    "quote": "I've seen everything"
   },
   {
     "name": "My Little Unicorn",
@@ -2695,7 +2771,8 @@
         "item": "Abyss",
         "details": "Spawns a cyan locust that has an 80% chance to destroy enemy projectiles upon contact."
       }
-    ]
+    ],
+    "quote": "Temporary badass"
   },
   {
     "name": "Book of Revelations",
@@ -2735,7 +2812,8 @@
         "item": "Book of Virtues",
         "details": "Spawns wisps in the inner ring that resemble tiny crosses that do not fire any tears.The wisps create a  7 Seals Harbinger familiar for the current room when destroyed."
       }
-    ]
+    ],
+    "quote": "Reusable soul protection"
   },
   {
     "name": "The Mark",
@@ -2770,7 +2848,8 @@
       "Ultra Secret Room"
     ],
     "item_effect": "+1 Black Heart. +1 damage. +0.2 speed.",
-    "synergy": []
+    "synergy": [],
+    "quote": "DMG + speed up"
   },
   {
     "name": "The Pact",
@@ -2805,7 +2884,8 @@
       "Ultra Secret Room"
     ],
     "item_effect": "+2 Black Hearts. +0.5 damage. +0.7 tears.",
-    "synergy": []
+    "synergy": [],
+    "quote": "DMG + tears up"
   },
   {
     "name": "Dead Cat",
@@ -2839,7 +2919,8 @@
       "Greed Devil Room"
     ],
     "item_effect": "+9 extra lives. Grants a familiar that follows Isaac. Sets Isaac's red heart containers to 1. Does not remove Soul Hearts or Black Hearts unless picked up as a character that cannot use red hearts. Does not remove Bone Hearts unless picked up as The Forgotten . Upon death respawns Isaac in the previous room and sets his red heart containers to 1 again. The item is removed from Isaac's inventory after it respawns Isaac 9 times. Can drop from the Super Pride mini-boss.",
-    "synergy": []
+    "synergy": [],
+    "quote": "9 lives"
   },
   {
     "name": "Lord of the Pit",
@@ -2872,7 +2953,8 @@
       "Ultra Secret Room"
     ],
     "item_effect": "+0.3 speed. Grants flight.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Demon wings"
   },
   {
     "name": "The Nail",
@@ -2910,7 +2992,8 @@
         "item": "Book of Virtues",
         "details": "Spawns black wisps in the inner ring.Wisps shoot nails that deal double damage from standard wisps and have increased knockback."
       }
-    ]
+    ],
+    "quote": "Temporary demon form"
   },
   {
     "name": "We Need To Go Deeper!",
@@ -2949,7 +3032,8 @@
         "item": "Book of Virtues",
         "details": "Spawns a skull wisp in the middle ring that shoots bone tears."
       }
-    ]
+    ],
+    "quote": "Reusable level skip"
   },
   {
     "name": "Deck of Cards",
@@ -2988,7 +3072,8 @@
         "item": "Book of Virtues",
         "details": "Spawns card-shaped wisps in the inner ring that spawn a card when destroyed."
       }
-    ]
+    ],
+    "quote": "Reusable card generator"
   },
   {
     "name": "Monstro's Tooth",
@@ -3025,7 +3110,8 @@
         "item": "Book of Virtues",
         "details": "Spawns wisps in the middle ring that look like teeth.Wisps shoot 50% slower than standard wisps but deal 12 damage per second."
       }
-    ]
+    ],
+    "quote": "Summon Monstro"
   },
   {
     "name": "Loki's Horns",
@@ -3057,7 +3143,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "Adds a chance to shoot tears in 4 cardinal directions. The chance starts at 25% with 0 luck and goes up to 100% with 15 luck. Has a 1% chance of being dropped upon defeating Loki.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Cross tears"
   },
   {
     "name": "Little Chubby",
@@ -3095,7 +3182,8 @@
         "item": "BFFS!",
         "details": "×2 damage."
       }
-    ]
+    ],
+    "quote": "Attack buddy"
   },
   {
     "name": "Spider Bite",
@@ -3133,7 +3221,8 @@
         "item": "Abyss",
         "details": "Spawns a light grey locust that has a chance to slow enemies."
       }
-    ]
+    ],
+    "quote": "Slow effect"
   },
   {
     "name": "The Small Rock",
@@ -3163,7 +3252,8 @@
       "Crane Game"
     ],
     "item_effect": "+1 damage. +0.2 tears. -0.2 speed. Has a small chance to drop when destroying a Tinted Rock.",
-    "synergy": []
+    "synergy": [],
+    "quote": "DMG up + speed down"
   },
   {
     "name": "Spelunker Hat",
@@ -3195,7 +3285,8 @@
       "Crane Game"
     ],
     "item_effect": "Reveals map icons and layout up to 2 rooms from where Isaac is located. Can also reveal Secret Rooms and Super Secret Rooms. Completely prevents damage from projectiles falling from above.",
-    "synergy": []
+    "synergy": [],
+    "quote": "See-through doors"
   },
   {
     "name": "Super Bandage",
@@ -3228,7 +3319,8 @@
       "Greed Boss Room"
     ],
     "item_effect": "+1 full Red Heart container. +2 Soul Hearts. Heals 1 Red Heart container.",
-    "synergy": []
+    "synergy": [],
+    "quote": "+2 hearts"
   },
   {
     "name": "The Gamekid",
@@ -3266,7 +3358,8 @@
         "item": "Book of Virtues",
         "details": "Spawns wisps in the inner ring that look lilke Pac-Men.Wisps' tears have the  Anti-Gravity effect and can inflict fear on enemies."
       }
-    ]
+    ],
+    "quote": "Temporary Man-Pac"
   },
   {
     "name": "Sack of Pennies",
@@ -3297,7 +3390,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "Spawns a sack familiar that follows Isaac around and drops a random coin every 2 rooms. The first drop happens after 1 room.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Gives money"
   },
   {
     "name": "Robo-Baby",
@@ -3341,7 +3435,8 @@
         "item": "Abyss",
         "details": "Spawns an electrical cyan locust that has a chance to chain-zap enemies similar to the effects of  Jacob's Ladder. Zaps deal 0.1 damage."
       }
-    ]
+    ],
+    "quote": "Friends 'till the bbbbzzzt"
   },
   {
     "name": "Little C.H.A.D.",
@@ -3380,7 +3475,8 @@
         "item": "BFFS!",
         "details": "The familiar drops hearts in a repeating pattern of 2, 2, then 3 rooms."
       }
-    ]
+    ],
+    "quote": "Gives kisses"
   },
   {
     "name": "The Book of Sin",
@@ -3420,7 +3516,8 @@
         "item": "Book of Virtues",
         "details": "Spawns a random wisp based on one of the 7 Deadly Sins, independent of the pickup dropped.Pride: a blue bomb wisp in the middle ring.Greed: 3 yellow coin wisps in the outer ring whose tears can petrify enemies like  Midas' Touch.Wrath: an orange bomb wisp in the middle ring that fires flaming tears. They drop troll bombs when continuously firing and drop a bomb pickup when destroyed.Envy: a white face-like wisp in the outer ring.Lust: a randomly colored pill wisp in the inner ring that has the same effects as wisps spawned by  Mom's Bottle of Pills.Gluttony: a heart wisp in the middle ring that has the same effect as wisps spawned by  Yum Heart.Sloth: a Bob's Head wisp in the middle ring whose tears travel in an arc like  Ipecac but don't always explode on impact. There is a small chance for an exploding tear."
       }
-    ]
+    ],
+    "quote": "Reusable item generator"
   },
   {
     "name": "The Relic",
@@ -3459,7 +3556,8 @@
         "item": "BFFS!",
         "details": "One less room clear is required to drop a soul heart."
       }
-    ]
+    ],
+    "quote": "Soul generator"
   },
   {
     "name": "Little Gish",
@@ -3502,7 +3600,8 @@
         "item": "Abyss",
         "details": "Spawns a light grey locust that has a chance to slow enemies."
       }
-    ]
+    ],
+    "quote": "Sticky friend"
   },
   {
     "name": "Little Steven",
@@ -3545,7 +3644,8 @@
         "item": "Abyss",
         "details": "Spawns a purple locust that homes in on enemies."
       }
-    ]
+    ],
+    "quote": "Psychic friend"
   },
   {
     "name": "The Halo",
@@ -3579,7 +3679,8 @@
       "Greed Angel Room"
     ],
     "item_effect": "+1 full Red Heart container. +0.3 damage. +0.2 tears. +1.5 range. +0.3 speed. Heals 1 red heart container.",
-    "synergy": []
+    "synergy": [],
+    "quote": "All stats up"
   },
   {
     "name": "Mom's Bottle of Pills",
@@ -3622,7 +3723,8 @@
         "item": "Book of Virtues",
         "details": "Spawns wisps in the inner ring that look like pills.The wisps spawn pills when destroyed.They come in random colors (blue, red, white, pink, gray, light blue, and yellow).Each color has a 15% chance of firing tears that confuse, poison, petrify, burn, or spawn Troll Bombs.Each tear effect is assigned to one color of pill wisp based on the current run's seed.The only color pill wisp without a tear effect also spawns a hostile spider when destroyed."
       }
-    ]
+    ],
+    "quote": "Reusable pill generator"
   },
   {
     "name": "The Common Cold",
@@ -3659,7 +3761,8 @@
         "item": "Abyss",
         "details": "Spawns a green locust that has a chance to poison enemies."
       }
-    ]
+    ],
+    "quote": "Poison damage"
   },
   {
     "name": "The Parasite",
@@ -3696,7 +3799,8 @@
         "item": "Abyss",
         "details": "Spawns 3 red locusts that are linked to each other, of which 2 are 70% smaller."
       }
-    ]
+    ],
+    "quote": "Split shot"
   },
   {
     "name": "The D6",
@@ -3735,7 +3839,8 @@
         "item": "Book of Virtues",
         "details": "Spawns a D6 wisp in the inner ring.An extra wisp is spawned per item rerolled."
       }
-    ]
+    ],
+    "quote": "Reroll your destiny"
   },
   {
     "name": "Mr. Mega",
@@ -3773,7 +3878,8 @@
         "item": "Abyss",
         "details": "Spawns a yellow locust that has a 40% chance to explode upon enemy contact, dealing 40 damage."
       }
-    ]
+    ],
+    "quote": "Bigger boom"
   },
   {
     "name": "The Pinking Shears",
@@ -3810,7 +3916,8 @@
         "item": "Book of Virtues",
         "details": "Spawns wisps in the inner ring that look like Isaac's floating head.Wisps fire piercing tears."
       }
-    ]
+    ],
+    "quote": "Cut and run"
   },
   {
     "name": "The Wafer",
@@ -3849,7 +3956,8 @@
         "item": "Abyss",
         "details": "Spawns a cyan locust that has an 80% chance to destroy enemy projectiles upon contact."
       }
-    ]
+    ],
+    "quote": "Damage resistance"
   },
   {
     "name": "Money = Power",
@@ -3882,7 +3990,8 @@
       "Ultra Secret Room"
     ],
     "item_effect": "+0.04 damage for every penny Isaac has.",
-    "synergy": []
+    "synergy": [],
+    "quote": "$$$ = DMG"
   },
   {
     "name": "Mom's Contacts",
@@ -3922,7 +4031,8 @@
         "item": "Abyss",
         "details": "Spawns a grey locust that has a chance to petirfy enemies."
       }
-    ]
+    ],
+    "quote": "Freeze effect"
   },
   {
     "name": "The Bean",
@@ -3965,7 +4075,8 @@
         "item": "Abyss",
         "details": "Spawns a green locust that has a chance to poison enemies."
       }
-    ]
+    ],
+    "quote": "Toot on command"
   },
   {
     "name": "Guardian Angel",
@@ -4008,7 +4119,8 @@
         "item": "Abyss",
         "details": "Spawns a cyan locust that has a 50% chance to destroy enemy projectiles upon contact."
       }
-    ]
+    ],
+    "quote": "Extra protection"
   },
   {
     "name": "Demon Baby",
@@ -4048,7 +4160,8 @@
         "item": "BFFS!",
         "details": "×2 damage."
       }
-    ]
+    ],
+    "quote": "Auto-turret friend"
   },
   {
     "name": "Mom's Knife",
@@ -4089,7 +4202,8 @@
         "item": "Abyss",
         "details": "Spawns a locust that is 50% larger, and deals damage once every 5 ticks instead of 7."
       }
-    ]
+    ],
+    "quote": "Stab stab stab"
   },
   {
     "name": "Ouija Board",
@@ -4122,7 +4236,8 @@
       "Greed Devil Room"
     ],
     "item_effect": "+0.5 tears. Grants spectral tears that can travel through obstacles.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Spectral tears + tears up"
   },
   {
     "name": "9 Volt",
@@ -4161,7 +4276,8 @@
         "item": "Abyss",
         "details": "Spawns an electrical cyan locust that has a chance to chain-zap enemies similar to the effects of  Jacob's Ladder. Zaps deal 0.1 damage."
       }
-    ]
+    ],
+    "quote": "Quicker charge"
   },
   {
     "name": "Dead Bird",
@@ -4199,7 +4315,8 @@
         "item": "BFFS!",
         "details": "×2 damage."
       }
-    ]
+    ],
+    "quote": "Protective buddy"
   },
   {
     "name": "Brimstone",
@@ -4237,7 +4354,8 @@
         "item": "Abyss",
         "details": "Spawns a black locust that is 25% larger."
       }
-    ]
+    ],
+    "quote": "Blood laser barrage"
   },
   {
     "name": "Blood Bag",
@@ -4267,7 +4385,8 @@
       "Ultra Secret Room"
     ],
     "item_effect": "+1 full Red Heart container. +0.3 speed. Refills 4 red heart containers. Can drop as a final payout from a Blood Donation Machine .",
-    "synergy": []
+    "synergy": [],
+    "quote": "HP + speed up"
   },
   {
     "name": "Odd Mushroom",
@@ -4301,7 +4420,8 @@
       "Greed Secret Room"
     ],
     "item_effect": "+1.7 fire rate. +0.3 speed. -0.4 damage. ×0.9 damage multiplier -0.7% hitbox size. This visually only affects Isaac's head.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Tears up + damage down"
   },
   {
     "name": "Odd Mushroom",
@@ -4335,7 +4455,8 @@
       "Greed Secret Room"
     ],
     "item_effect": "+1 full Red Heart container. +1 damage. +1.5 range. -0.2 speed. Makes Isaac's head larger, which on its own is only a visual effect. If taken when Isaac is smaller than the default, the Mushroom also increases his hitbox slightly.",
-    "synergy": []
+    "synergy": [],
+    "quote": "HP + DMG up, speed down"
   },
   {
     "name": "Whore of Babylon",
@@ -4368,7 +4489,8 @@
       "Ultra Secret Room"
     ],
     "item_effect": "Whenever Isaac has half a red heart or less, he enters the Whore of Babylon state which grants the following effects: +1.5 damage. +0.3 speed. The effect lasts for the remainder of the room after healing. When playing as Eve , the effect will activate at one full red heart or less and will also increase her damage multiplier to ×1.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Curse up"
   },
   {
     "name": "Monster Manual",
@@ -4408,7 +4530,8 @@
         "item": "Book of Virtues",
         "details": "Grants a random familiar wisp in the inner ring, with 4 HP, similar to the ones given by  Buddy in a Box."
       }
-    ]
+    ],
+    "quote": "Temporary buddy generator"
   },
   {
     "name": "Dead Sea Scrolls",
@@ -4452,7 +4575,8 @@
         "item": "Abyss",
         "details": "Spawns a pink locust that has a chance to mimic random effects based on other Abyss locusts."
       }
-    ]
+    ],
+    "quote": "It's a mystery"
   },
   {
     "name": "Bobby-Bomb",
@@ -4490,7 +4614,8 @@
         "item": "Abyss",
         "details": "Spawns a yellow locust that has a 30% chance to explode upon enemy contact, dealing 40 damage."
       }
-    ]
+    ],
+    "quote": "Homing bombs"
   },
   {
     "name": "Razor Blade",
@@ -4535,7 +4660,8 @@
         "item": "The Book of Belial combined with Judas' Birthright",
         "details": "Activates the effects of  The Necronomicon alongside the original effect."
       }
-    ]
+    ],
+    "quote": "Feel my pain"
   },
   {
     "name": "Forget Me Now",
@@ -4581,7 +4707,8 @@
         "item": "The Book of Belial combined with Judas' Birthright",
         "details": "Grants +2 damage that lasts for the entire new floor."
       }
-    ]
+    ],
+    "quote": "I don't remember..."
   },
   {
     "name": "Forever alone",
@@ -4620,7 +4747,8 @@
         "item": "BFFS!",
         "details": "×2 damage."
       }
-    ]
+    ],
+    "quote": "Attack fly"
   },
   {
     "name": "Bucket of Lard",
@@ -4651,7 +4779,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "+2 full heart containers. -0.2 speed. Can drop from the Super Gluttony mini-boss.",
-    "synergy": []
+    "synergy": [],
+    "quote": "HP up"
   },
   {
     "name": "A Pony",
@@ -4685,7 +4814,8 @@
         "item": "Book of Virtues",
         "details": "Spawns wisps in the middle ring that look like A Pony.Wisps charge in the direction Isaac is shooting instead of firing tears.While charging, wisps deal contanct damage equal to 40% of Isaac's damage per tick (120% of Isaac's damage per second) and are invincible.Wisps must wait 2.5 seconds after hitting a wall before they can charge again.They deal their normal contact damage when not charging."
       }
-    ]
+    ],
+    "quote": "Flight + dash attack"
   },
   {
     "name": "Bomb Bag",
@@ -4722,7 +4852,8 @@
         "item": "BFFS!",
         "details": "The familiar drops bombs in a repeating pattern of 2, 2, then 3 rooms."
       }
-    ]
+    ],
+    "quote": "Gives bombs"
   },
   {
     "name": "A Lump of Coal",
@@ -4754,7 +4885,8 @@
       "Greed Devil Room"
     ],
     "item_effect": "Tears gain a flat damage bonus of about +0.5-0.6 per tile of distance traveled, unaffected by other multipliers. Can drop by defeating Krampus.",
-    "synergy": []
+    "synergy": [],
+    "quote": "My Xmas present"
   },
   {
     "name": "Guppy's Paw",
@@ -4799,7 +4931,8 @@
         "item": "The Book of Belial combined with Judas' Birthright",
         "details": "Grants +0.5 damage."
       }
-    ]
+    ],
+    "quote": "Soul converter"
   },
   {
     "name": "Guppy's Tail",
@@ -4833,7 +4966,8 @@
       "Greed Devil Room"
     ],
     "item_effect": "Grants a 33% chance of replacing room clear rewards with a Chest or a Locked Chest . Grants a 22% chance to replace the room clear reward with nothing. Due to these effects, keys become more scarce as they can often times be replaced with Locked Chests.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Cursed?"
   },
   {
     "name": "IV Bag",
@@ -4874,7 +5008,8 @@
         "item": "The Book of Belial combined with Judas' Birthright",
         "details": "Grants +0.67 damage which lasts only for the current room."
       }
-    ]
+    ],
+    "quote": "Portable blood bank"
   },
   {
     "name": "Best Friend",
@@ -4917,7 +5052,8 @@
         "item": "Abyss",
         "details": "Spawns a yellow locust that has a 30% chance to explode upon enemy contact, dealing 40 damage."
       }
-    ]
+    ],
+    "quote": "Friends 'till the end"
   },
   {
     "name": "Remote Detonator",
@@ -4964,7 +5100,8 @@
         "item": "Abyss",
         "details": "Spawns a yellow locust that has a 30% chance to explode upon enemy contact, dealing 40 damage."
       }
-    ]
+    ],
+    "quote": "Remote bomb detonation"
   },
   {
     "name": "Stigmata",
@@ -4998,7 +5135,8 @@
       "Wooden Chest"
     ],
     "item_effect": "+1 full Red Heart container. +0.3 damage. Refills 1 heart container.",
-    "synergy": []
+    "synergy": [],
+    "quote": "DMG + HP up"
   },
   {
     "name": "Mom's Purse",
@@ -5031,7 +5169,8 @@
       "Old Chest"
     ],
     "item_effect": "Spawns a random trinket. Allows 2 trinkets to be carried at once.",
-    "synergy": []
+    "synergy": [],
+    "quote": "More trinket room"
   },
   {
     "name": "Bob's Curse",
@@ -5071,7 +5210,8 @@
         "item": "Abyss",
         "details": "Spawns a yellow locust that explodes upon enemy contact, dealing 40 damage, and has a 30% chance to poison enemies."
       }
-    ]
+    ],
+    "quote": "+5 poison bombs"
   },
   {
     "name": "Pageant Boy",
@@ -5101,7 +5241,8 @@
       "Boss"
     ],
     "item_effect": "Spawns 7 random coins and a random penny trinket.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Ultimate grand supreme"
   },
   {
     "name": "Scapular",
@@ -5134,7 +5275,8 @@
       "Greed Angel Room"
     ],
     "item_effect": "Once per room, when Isaac is down to his last half heart, he gains a soul heart. Re-entering the room allows for the effect to be triggered again. Cannot be triggered by self-sacrifice methods such as Blood Donation Machines or Devil Beggars .",
-    "synergy": []
+    "synergy": [],
+    "quote": "Pray for a miracle"
   },
   {
     "name": "Speed Ball",
@@ -5167,7 +5309,8 @@
       "Greed Boss Room"
     ],
     "item_effect": "+0.3 speed. +0.2 shot speed.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Speed + shot speed up"
   },
   {
     "name": "Bum Friend",
@@ -5205,7 +5348,8 @@
         "item": "BFFS!",
         "details": "All future drops will happen every 3 coins."
       }
-    ]
+    ],
+    "quote": "He's greedy"
   },
   {
     "name": "Guppy's Head",
@@ -5245,7 +5389,8 @@
         "item": "Book of Virtues",
         "details": "Summons wisps in the outer ring instead of flies.Each wisp summons a Blue Fly when destroyed."
       }
-    ]
+    ],
+    "quote": "Reusable fly hive"
   },
   {
     "name": "Prayer Card",
@@ -5284,7 +5429,8 @@
         "item": "Book of Virtues",
         "details": "Spawns white heart-shaped wisps in the inner ring.Wisps' tears have 0.75 shot speed and effectively act as though they have  Sacred Heart."
       }
-    ]
+    ],
+    "quote": "Reusable eternity"
   },
   {
     "name": "Notched Axe",
@@ -5327,7 +5473,8 @@
         "item": "The Book of Belial combined with Judas' Birthright",
         "details": "The pickaxe receives a purplish glow and the following upgrades:\nIncreased durability: each use of the pickaxe has a very high chance not to use a charge.\nFaster usage: the pickaxe can be swung faster.\nHigher knockback: enemies are knocked back when hit, receiving 8 + 0.2 × CurrentFloor damage if they collide with a wall, an obstacle or another enemy.\nFire effect: the pickaxe sets enemies on fire. The burn damage is equal to Judas' damage stat.\nIncreased luck:\n• destroying poops will spawn pickups much more frequently. When combined with  Petrified Poop the chance goes up to 100% and will often result in multiple pickups from a single poop.\n• destroying tinted rocks will drop more consumables than usual.\n• destroying urns has a higher chance to drop more coins. The coins can be of different variants.\n• destroying mushrooms, skulls and other alternative rock variants has an increased chance to drop their respective rewards.\n• destroying fool's gold rocks will drop significantly more coins."
       }
-    ]
+    ],
+    "quote": "Rocks don't stand a chance"
   },
   {
     "name": "Infestation",
@@ -5358,7 +5505,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "Spawns 2-6 Blue Flies upon taking damage. Has a 1% chance of being dropped upon defeating The Husk.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Fly revenge"
   },
   {
     "name": "Ipecac",
@@ -5395,7 +5543,8 @@
         "item": "Abyss",
         "details": "Spawns a green locust that is 25% larger, 20% slower, deals double damage, and has an 80% chance to poison enemies, or explode upon impact."
       }
-    ]
+    ],
+    "quote": "Explosive shots"
   },
   {
     "name": "Tough Love",
@@ -5426,7 +5575,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "Adds a chance to shoot a tooth instead of a tear, that deals 3.2x Isaac's damage. The chance for a tooth shot starts at 10% with 0 luck, and maximizes at 100% with 9 luck.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Tooth shot"
   },
   {
     "name": "The Mulligan",
@@ -5457,7 +5607,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "Tears have a 16% chance to spawn a Blue Fly when they hit an enemy.",
-    "synergy": []
+    "synergy": [],
+    "quote": "They grow inside"
   },
   {
     "name": "Technology 2",
@@ -5489,7 +5640,8 @@
       "Crane Game"
     ],
     "item_effect": "×0.66 fire rate multiplier. Replaces the tears fired from Isaac's right eye with a piercing laser with unlimited range that fires continuously as long as a fire button is held. The laser deals ~13% of Isaac's damage 15 times per second (~195% per second). The laser can knock back enemies.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Extra laser"
   },
   {
     "name": "Mutant Spider",
@@ -5527,7 +5679,8 @@
         "item": "Abyss",
         "details": "Spawns 4 red locusts that are linked to each other, each being 75% smaller."
       }
-    ]
+    ],
+    "quote": "Quad shot"
   },
   {
     "name": "Chemical Peel",
@@ -5558,7 +5711,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "+2 flat damage to tears fired from Isaac's left eye.",
-    "synergy": []
+    "synergy": [],
+    "quote": "DMG up"
   },
   {
     "name": "The Peeper",
@@ -5596,7 +5750,8 @@
         "item": "BFFS!",
         "details": "×2 damage."
       }
-    ]
+    ],
+    "quote": "Plop!"
   },
   {
     "name": "Habit",
@@ -5628,7 +5783,8 @@
       "Greed Shop"
     ],
     "item_effect": "Adds +1 charge to Isaac's active item upon taking damage.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Item martyr"
   },
   {
     "name": "Bloody Lust",
@@ -5662,7 +5818,8 @@
       "Ultra Secret Room"
     ],
     "item_effect": "Taking damage increases Isaac's damage stat for the remainder of the floor. Damage is increased up to 6 times per floor, in the following manner: +0.5 for the first hit and an additional +0.2 for each hit, until +1.5 at the final hit. The maximum total is +6 damage.",
-    "synergy": []
+    "synergy": [],
+    "quote": "RAGE!"
   },
   {
     "name": "Crystal Ball",
@@ -5696,7 +5853,8 @@
         "item": "Book of Virtues",
         "details": "Wisps have much higher health than normal.Their tears will automatically aim towards nearby enemies."
       }
-    ]
+    ],
+    "quote": "I see my future"
   },
   {
     "name": "Spirit of the Night",
@@ -5729,7 +5887,8 @@
       "Ultra Secret Room"
     ],
     "item_effect": "Grants spectral tears and flight.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Scary"
   },
   {
     "name": "Crack the Sky",
@@ -5771,7 +5930,8 @@
         "item": "Abyss",
         "details": "Spawns a white locust that has a chance to shoot down a  Crack the Sky beam upon contact with an enemy."
       }
-    ]
+    ],
+    "quote": "Holy white death"
   },
   {
     "name": "Ankh",
@@ -5802,7 +5962,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "+1 extra life. Upon death, respawns Isaac as ??? with 3 Soul Hearts in the most recent non-hostile room, and then removes the item. If playing as Tainted ??? , will revive as that character instead.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Eternal life?"
   },
   {
     "name": "Celtic Cross",
@@ -5841,7 +6002,8 @@
         "item": "Abyss",
         "details": "Spawns a cyan locust that has a 50% chance to destroy enemy projectiles upon contact."
       }
-    ]
+    ],
+    "quote": "Blessing of protection"
   },
   {
     "name": "Ghost Baby",
@@ -5880,7 +6042,8 @@
         "item": "BFFS!",
         "details": "×2 damage."
       }
-    ]
+    ],
+    "quote": "Spectral buddy"
   },
   {
     "name": "The Candle",
@@ -5922,7 +6085,8 @@
         "item": "Abyss",
         "details": "Spawns an orange locust that sets enemies on fire."
       }
-    ]
+    ],
+    "quote": "Reusable flames"
   },
   {
     "name": "Cat-o-nine-tails",
@@ -5953,7 +6117,8 @@
       "Greed Boss Room"
     ],
     "item_effect": "+1 damage. +0.23 shot speed.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Shot speed + damage up"
   },
   {
     "name": "D20",
@@ -5992,7 +6157,8 @@
         "item": "Book of Virtues",
         "details": "Spawns wisps in the middle ring.In addition to summoning its specific wisp, instead of rerolling pickups, it will destroy all pickups in the room and has a 20% chance to give a random wisp for each pickup destroyed."
       }
-    ]
+    ],
+    "quote": "Reroll the basics"
   },
   {
     "name": "Harlequin Baby",
@@ -6031,7 +6197,8 @@
         "item": "BFFS!",
         "details": "×2 damage."
       }
-    ]
+    ],
+    "quote": "Double shot buddy"
   },
   {
     "name": "Epic Fetus",
@@ -6070,7 +6237,8 @@
         "item": "Abyss",
         "details": "Spawns a yellow locust that has an 80% chance to explode upon enemy contact, dealing 40 damage."
       }
-    ]
+    ],
+    "quote": "On-demand air strike"
   },
   {
     "name": "Polyphemus",
@@ -6107,7 +6275,8 @@
         "item": "Abyss",
         "details": "Spawns a red locust that is 50% larger."
       }
-    ]
+    ],
+    "quote": "Mega tears"
   },
   {
     "name": "Daddy Longlegs",
@@ -6145,7 +6314,8 @@
         "item": "BFFS!",
         "details": "×2 damage."
       }
-    ]
+    ],
+    "quote": "Daddy's love"
   },
   {
     "name": "Spider Butt",
@@ -6187,7 +6357,8 @@
         "item": "Abyss",
         "details": "Spawns a light grey locust that has a chance to slow enemies."
       }
-    ]
+    ],
+    "quote": "Mass enemy slowdown + damage"
   },
   {
     "name": "Sacrificial Dagger",
@@ -6231,7 +6402,8 @@
         "item": "Abyss",
         "details": "Spawns a cyan locust that has a 30% chance to destroy enemy projectiles upon contact."
       }
-    ]
+    ],
+    "quote": "My fate protects me"
   },
   {
     "name": "Mitre",
@@ -6262,7 +6434,8 @@
       "Angel Room"
     ],
     "item_effect": "Grants a 33% chance to convert any red heart drop into a Soul Heart .",
-    "synergy": []
+    "synergy": [],
+    "quote": "Blessing of purity"
   },
   {
     "name": "Rainbow Baby",
@@ -6300,7 +6473,8 @@
         "item": "BFFS!",
         "details": "×2 damage."
       }
-    ]
+    ],
+    "quote": "Random buddy"
   },
   {
     "name": "Dad's Key",
@@ -6339,7 +6513,8 @@
         "item": "Book of Virtues",
         "details": "Spawns wisps in the middle ring.\nIf a wisp touches a  Locked Chest or special room door, it will unlock it, destroying itself in the process.\nThese wisps can open any type of door, including ones not normally accessible via Dad's Key.\nThey cannot open  Bomb Chests and  Mega Chests."
       }
-    ]
+    ],
+    "quote": "Opens all doors..."
   },
   {
     "name": "Stem Cells",
@@ -6372,7 +6547,8 @@
       "Ultra Secret Room"
     ],
     "item_effect": "+1 full Red Heart container. +0.16 shot speed. Heals 1 red heart container.",
-    "synergy": []
+    "synergy": [],
+    "quote": "HP up"
   },
   {
     "name": "Portable Slot",
@@ -6408,7 +6584,8 @@
         "item": "Book of Virtues",
         "details": "Spawns different wisps based on the payout:      • Nothing: no wisp is spawned.      • Bomb:  Mr. Boom wisp.     • Coin: coin wisp for each coin dropped.     • Heart:  Yum Heart wisp.     • Key:  Dad's Key wisp.      • Pill:  Mom's Bottle of Pills wisp.     • Pretty Fly: 2-4  Guppy's Head wisps."
       }
-    ]
+    ],
+    "quote": "Gamble 24/7"
   },
   {
     "name": "Holy Water",
@@ -6452,7 +6629,8 @@
         "item": "Abyss",
         "details": "Spawns a white locust that has a chance to petrify enemies and summon  Crack the Sky beams upon impact."
       }
-    ]
+    ],
+    "quote": "Splash!"
   },
   {
     "name": "Fate",
@@ -6482,7 +6660,8 @@
       "Golden Chest"
     ],
     "item_effect": "+1 Eternal heart . Grants flight.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Flight eternal"
   },
   {
     "name": "The Black Bean",
@@ -6520,7 +6699,8 @@
         "item": "Abyss",
         "details": "Spawns a green locust that has a chance to poison enemies."
       }
-    ]
+    ],
+    "quote": "Toot on touch"
   },
   {
     "name": "White Pony",
@@ -6559,7 +6739,8 @@
         "item": "Abyss",
         "details": "Spawns a white locust that has a chance to shoot down a  Crack the Sky beam upon contact with an enemy."
       }
-    ]
+    ],
+    "quote": "Flight + holy death"
   },
   {
     "name": "Sacred Heart",
@@ -6597,7 +6778,8 @@
         "item": "Abyss",
         "details": "Spawns a white locust which is 20% slower, homes in on enemies, and has a chance to shoot down a  Crack the Sky beam upon contact with an enemy."
       }
-    ]
+    ],
+    "quote": "Homing shots + DMG up"
   },
   {
     "name": "Tooth Picks",
@@ -6629,7 +6811,8 @@
       "Wooden Chest"
     ],
     "item_effect": "+0.7 tears. +0.16 shot speed.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Tears + shot speed up"
   },
   {
     "name": "Holy Grail",
@@ -6660,7 +6843,8 @@
       "Greed Angel Room"
     ],
     "item_effect": "+1 full Red Heart container. Heals 1 red heart container. Grants flight.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Flight + HP up"
   },
   {
     "name": "Dead Dove",
@@ -6691,7 +6875,8 @@
       "Greed Angel Room"
     ],
     "item_effect": "Grants flight. Grants spectral tears.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Flight + spectral tears"
   },
   {
     "name": "Blood Rights",
@@ -6734,7 +6919,8 @@
         "item": "The Book of Belial combined with Judas' Birthright",
         "details": "Invokes the  Razor Blade effect along with the original effect."
       }
-    ]
+    ],
+    "quote": "Mass enemy damage at a cost"
   },
   {
     "name": "Guppy's Hairball",
@@ -6776,7 +6962,8 @@
         "item": "Abyss",
         "details": "Spawns a cyan locust that has a 30% chance to destroy enemy projectiles upon contact."
       }
-    ]
+    ],
+    "quote": "Swing it"
   },
   {
     "name": "Abel",
@@ -6814,7 +7001,8 @@
         "item": "BFFS!",
         "details": "×2 damage."
       }
-    ]
+    ],
+    "quote": "Mirrored buddy"
   },
   {
     "name": "SMB Super Fan",
@@ -6846,7 +7034,8 @@
       "Crane Game"
     ],
     "item_effect": "+1 heart container. +0.3 damage. +0.2 tears. +0.2 speed. +2.5 range. Fully heals Isaac.",
-    "synergy": []
+    "synergy": [],
+    "quote": "All stats up"
   },
   {
     "name": "Pyro",
@@ -6886,7 +7075,8 @@
         "item": "Abyss",
         "details": "Spawns a yellow locust that has a 40% chance to explode upon enemy contact, dealing 40 damage."
       }
-    ]
+    ],
+    "quote": "99 bombs"
   },
   {
     "name": "3 Dollar Bill",
@@ -6923,7 +7113,8 @@
         "item": "Abyss",
         "details": "Spawns a pink locust that has a chance to mimic random effects based on other Abyss locusts."
       }
-    ]
+    ],
+    "quote": "Rainbow tears"
   },
   {
     "name": "Telepathy For Dummies",
@@ -6966,7 +7157,8 @@
         "item": "Abyss",
         "details": "Spawns a purple locust that homes in on enemies."
       }
-    ]
+    ],
+    "quote": "Temporary psychic shot"
   },
   {
     "name": "MEAT!",
@@ -6998,7 +7190,8 @@
       "Ultra Secret Room"
     ],
     "item_effect": "+1 full Red Heart container. +0.3 damage. Heals 1 additional Red Heart.",
-    "synergy": []
+    "synergy": [],
+    "quote": "DMG + HP up"
   },
   {
     "name": "Magic 8 Ball",
@@ -7031,7 +7224,8 @@
       "Crane Game"
     ],
     "item_effect": "On pickup Drops a random tarot card. While held +0.16 shot speed. +15% chance for the first Planetarium to appear.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Shot speed up"
   },
   {
     "name": "Mom's Coin Purse",
@@ -7067,7 +7261,8 @@
       "Old Chest"
     ],
     "item_effect": "Spawns 4 random pills.",
-    "synergy": []
+    "synergy": [],
+    "quote": "What's all this...?"
   },
   {
     "name": "Squeezy",
@@ -7100,7 +7295,8 @@
       "Crane Game"
     ],
     "item_effect": "On pickup Spawns 2 Soul Hearts . While held +0.4 tears.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Tears up"
   },
   {
     "name": "Jesus Juice",
@@ -7133,7 +7329,8 @@
       "Greed Angel Room"
     ],
     "item_effect": "+0.5 damage. +1.5 range.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Damage + range up"
   },
   {
     "name": "Box",
@@ -7165,7 +7362,8 @@
       "Greed Boss Room"
     ],
     "item_effect": "Spawns 1 coin, key, bomb, heart, card/rune, pill and trinket. The pickups can be of any variety (nickels, dimes, soul hearts, double bombs, golden trinkets, etc).",
-    "synergy": []
+    "synergy": [],
+    "quote": "Stuff"
   },
   {
     "name": "Mom's Key",
@@ -7199,7 +7397,8 @@
       "Old Chest"
     ],
     "item_effect": "+2 keys. If a chest spawns hearts, coins, bombs and/or keys, a second group of said pickups will spawn, effectively doubling the average pickup yield. Does not affect Red Chests and Old Chests .",
-    "synergy": []
+    "synergy": [],
+    "quote": "Better chest loot +2 keys"
   },
   {
     "name": "Mom's Eyeshadow",
@@ -7238,7 +7437,8 @@
         "item": "Abyss",
         "details": "Spawns a pink locust that has a chance to charm enemies."
       }
-    ]
+    ],
+    "quote": "Charm tears"
   },
   {
     "name": "Iron Bar",
@@ -7275,7 +7475,8 @@
         "item": "Abyss",
         "details": "Spawns a light grey locust that has a chance to confuse enemies."
       }
-    ]
+    ],
+    "quote": "DMG up + concussive tears"
   },
   {
     "name": "Midas' Touch",
@@ -7312,7 +7513,8 @@
         "item": "Abyss",
         "details": "Spawns a grey locust that has a chance to petirfy enemies."
       }
-    ]
+    ],
+    "quote": "Golden touch"
   },
   {
     "name": "Humbleing Bundle",
@@ -7343,7 +7545,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "Provides a 50% chance to transform all bombs, keys, pennies and red hearts into their respective double variants.",
-    "synergy": []
+    "synergy": [],
+    "quote": "1+1 free 4Evar"
   },
   {
     "name": "Fanny Pack",
@@ -7375,7 +7578,8 @@
       "Greed Shop"
     ],
     "item_effect": "Grants a 50% chance to drop a random coin, bomb, key or heart when taking damage.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Filled with goodies"
   },
   {
     "name": "Sharp Plug",
@@ -7407,7 +7611,8 @@
       "Greed Shop"
     ],
     "item_effect": "Grants the ability to recharge your active item in exchange for self-damage. This can be accomplished by attempting to use an active item when it's not fully charged. Each charge slot costs one half-heart. Red hearts are prioritized when sacrificing health. Cannot deal fatal damage. It can leave Isaac at a minimum of half a heart.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Infinite charge... at a cost"
   },
   {
     "name": "Guillotine",
@@ -7438,7 +7643,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "+1 damage. +0.5 fire rate. Detaches Isaac's head from his body, and makes it rotate around his body, allowing it to deal contact damage and block projectiles. The tears are still shot from Isaac's head, resulting in a non-constant line of fire while standing still. The head deals 7 damage per tick (52.5 per second).",
-    "synergy": []
+    "synergy": [],
+    "quote": "DMG + tears up. An out-of-body experience!"
   },
   {
     "name": "Ball of Bandages",
@@ -7480,7 +7686,8 @@
         "item": "Abyss",
         "details": "Spawns a cyan locust that has a 50% chance to destroy enemy projectiles upon contact."
       }
-    ]
+    ],
+    "quote": "Gotta lick 'em all!"
   },
   {
     "name": "Champion Belt",
@@ -7513,7 +7720,8 @@
       "Ultra Secret Room"
     ],
     "item_effect": "+1 damage. Increases the chance for champion enemies to appear by 15%. Does not affect the spawn rate of champion bosses. Does not affect the champion rates in The Void.",
-    "synergy": []
+    "synergy": [],
+    "quote": "DMG + challenge up"
   },
   {
     "name": "Butt Bombs",
@@ -7552,7 +7760,8 @@
         "item": "Abyss",
         "details": "Spawns a yellow locust that explodes upon enemy contact, dealing 40 damage, and has a 30% chance to poison enemies."
       }
-    ]
+    ],
+    "quote": "Toxic blast +5 bombs"
   },
   {
     "name": "Gnawed Leaf",
@@ -7589,7 +7798,8 @@
         "item": "Abyss",
         "details": "Spawns a cyan locust that has an 80% chance to destroy enemy projectiles upon contact."
       }
-    ]
+    ],
+    "quote": "Unbreakable"
   },
   {
     "name": "Spiderbaby",
@@ -7620,7 +7830,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "Spawns 3-5 friendly Blue Spiders upon taking damage. Has a 1% chance of being dropped upon defeating The Widow.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Spider revenge"
   },
   {
     "name": "Guppy's Collar",
@@ -7655,7 +7866,8 @@
       "Crane Game"
     ],
     "item_effect": "Grants a permanent 50% chance to respawn on death, returning Isaac to the previous room. Respawning via this item will leave Isaac on half a red heart, or half soul heart if he had no red heart containers.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Eternal life?"
   },
   {
     "name": "Lost Contact",
@@ -7694,7 +7906,8 @@
         "item": "Abyss",
         "details": "Spawns a cyan locust that destroys enemy projectiles upon contact."
       }
-    ]
+    ],
+    "quote": "Shielded tears"
   },
   {
     "name": "Anemic",
@@ -7726,7 +7939,8 @@
       "Ultra Secret Room"
     ],
     "item_effect": "+1.5 range. Isaac leaves a trail of red creep upon taking damage. The creep deals 2 damage per tick (20 per second).",
-    "synergy": []
+    "synergy": [],
+    "quote": "Toxic blood"
   },
   {
     "name": "Goat Head",
@@ -7757,7 +7971,8 @@
       "Curse Room"
     ],
     "item_effect": "100% chance for a devil/angel room to spawn after beating a boss, regardless of damage taken. The devil/angel room won't disappear after leaving. Even if the boss has been defeated on the current floor, the item will still spawn a devil/angel room. Does not work on floors that don't normally spawn a devil/angel room.",
-    "synergy": []
+    "synergy": [],
+    "quote": "He accepts your offering"
   },
   {
     "name": "Ceremonial Robes",
@@ -7791,7 +8006,8 @@
       "Greed Devil Room"
     ],
     "item_effect": "+3 Black Hearts. +1 damage. Has a 1% chance of being dropped upon defeating The Heretic.",
-    "synergy": []
+    "synergy": [],
+    "quote": "DMG + evil up"
   },
   {
     "name": "Mom's Wig",
@@ -7824,7 +8040,8 @@
       "Old Chest"
     ],
     "item_effect": "On pickup Heals 1 Red Heart container. While held Makes Isaac occasionally spawn friendly Blue Spiders while firing tears. Up to 5 spiders can be spawned at once. The chance to spawn spiders scales with luck, and goes up to 100% with 10 luck.",
-    "synergy": []
+    "synergy": [],
+    "quote": "You feel itchy..."
   },
   {
     "name": "Placenta",
@@ -7855,7 +8072,8 @@
       "Greed Boss Room"
     ],
     "item_effect": "On pickup +1 full Red Heart container. Heals 1 additional Red Heart. While held Grants Isaac a chance to regenerate half a red heart each time the in-game timer hits a new minute (00 seconds). Can drop from destroying polyps in The Womb.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Regeneration + HP up"
   },
   {
     "name": "Old Bandage",
@@ -7886,7 +8104,8 @@
       "Greed Boss Room"
     ],
     "item_effect": "+1 empty Red Heart container. Grants a chance of dropping a red heart after taking damage. The chance starts at 20% with 0 luck, and goes up to 100% with 80 luck.",
-    "synergy": []
+    "synergy": [],
+    "quote": "HP up"
   },
   {
     "name": "Sad Bombs",
@@ -7924,7 +8143,8 @@
         "item": "Abyss",
         "details": "Spawns a yellow locust that has a 30% chance to explode upon enemy contact, dealing 40 damage."
       }
-    ]
+    ],
+    "quote": "Tear blasts +5 bombs"
   },
   {
     "name": "Rubber Cement",
@@ -7955,7 +8175,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "Makes Isaac's tears bounce off of walls, enemies, bombs and environmental objects.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Bouncing tears"
   },
   {
     "name": "Anti-Gravity",
@@ -7986,7 +8207,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "+1 fire rate. Holding the fire button causes tears to hover in midair. Upon releasing the button, tears are shot in the direction they were originally fired at. If the button is not released, tears will fire on their own after 3 seconds.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Anti-gravity tears + tears up"
   },
   {
     "name": "Pyromaniac",
@@ -8018,7 +8240,8 @@
       "Bomb Bum"
     ],
     "item_effect": "+5 bombs. Makes explosions heal Isaac for half a red heart rather than damaging him. Grants immunity to damage from fire places or enemy fires, as well as the lake of lava in The Beast fight. No healing occurs if Isaac has no empty red heart containers.",
-    "synergy": []
+    "synergy": [],
+    "quote": "It hurts so good +5 bombs"
   },
   {
     "name": "Cricket's Body",
@@ -8055,7 +8278,8 @@
         "item": "Abyss",
         "details": "Spawns 4 red locusts that are linked to each other, each being 75% smaller."
       }
-    ]
+    ],
+    "quote": "Bursting shots + tears up"
   },
   {
     "name": "Gimpy",
@@ -8090,7 +8314,8 @@
       "Greed Devil Room"
     ],
     "item_effect": "Grants Isaac a chance to spawn a Soul Heart upon taking damage. The chance to drop a Soul Heart starts at 8% with 0 luck, and goes up to 100% with 46 luck. Grants enemies a chance to drop a Half Red Heart upon death. This chance depends on the enemies' base health points: • <10 HP → 1% chance • 10-29 HP → 5% chance • 30+ HP → 10% chance Has a 1% chance of being dropped upon defeating Sisters Vis.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Sweet suffering"
   },
   {
     "name": "Black Lotus",
@@ -8122,7 +8347,8 @@
       "Greed Secret Room"
     ],
     "item_effect": "+1 full Red Heart container. +1 Soul Heart. +1 Black Heart.",
-    "synergy": []
+    "synergy": [],
+    "quote": "HP up x3"
   },
   {
     "name": "Piggy Bank",
@@ -8154,7 +8380,8 @@
       "Crane Game"
     ],
     "item_effect": "+3¢. Spawns 1-2 Pennies upon taking damage. When held by Keeper or Tainted Keeper , will spawn 0-1 Pennies instead.",
-    "synergy": []
+    "synergy": [],
+    "quote": "My life savings"
   },
   {
     "name": "Mom's Perfume",
@@ -8193,7 +8420,8 @@
         "item": "Abyss",
         "details": "Spawns a black locust that has a chance to apply fear to enemies."
       }
-    ]
+    ],
+    "quote": "Fear shot + tears up"
   },
   {
     "name": "Monstro's Lung",
@@ -8224,7 +8452,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "×0.23 fire rate multiplier. Replaces Isaac's tears with a charge-attack that fires a barrage of 14 tears, similarly to Monstro's attack. Each tear has a random size multiplier between 0.9x and 1.33x, but deals the same amount of damage, equal to Isaac's damage stat. Has a 1% chance of being dropped upon defeating Monstro II.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Charged burst attack"
   },
   {
     "name": "Abaddon",
@@ -8263,7 +8492,8 @@
         "item": "Abyss",
         "details": "Spawns a black locust that has a chance to apply fear to enemies."
       }
-    ]
+    ],
+    "quote": "Evil + DMG up + fear shot"
   },
   {
     "name": "Ball of Tar",
@@ -8300,7 +8530,8 @@
         "item": "Abyss",
         "details": "Spawns a black locust that has a chance to slow enemies."
       }
-    ]
+    ],
+    "quote": "Sticky feet..."
   },
   {
     "name": "Stop Watch",
@@ -8338,7 +8569,8 @@
         "item": "Abyss",
         "details": "Spawns a light grey locust that has a chance to slow enemies."
       }
-    ]
+    ],
+    "quote": "Let's slow this down a bit..."
   },
   {
     "name": "Tiny Planet",
@@ -8369,7 +8601,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "+6.5 range. Grants spectral tears. Tears now revolve around Isaac at a fixed distance until they hit the ground. Changing the firing direction will redirect all previously fired tears.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Orbiting tears + range up"
   },
   {
     "name": "Infestation 2",
@@ -8400,7 +8633,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "Spawns a friendly Blue Spider upon killing an enemy. Blue Spiders themselves cannot spawn more Blue Spiders when killing enemies.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Infestation shot"
   },
   {
     "name": "E. Coli",
@@ -8431,7 +8665,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "Grants Isaac the ability to turn non-boss enemies into poop by touching them. Poops spawned this way can yield pickups when destroyed. Increases the chance of poops dropping hearts.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Turdy touch"
   },
   {
     "name": "Death's Touch",
@@ -8464,7 +8699,8 @@
       "Greed Devil Room"
     ],
     "item_effect": "+1.5 damage. -0.3 tears. ×2 tear size. Grants piercing tears. Tears are replaced by Death's scythes.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Piercing shots + DMG up"
   },
   {
     "name": "Key Piece 1",
@@ -8492,7 +8728,8 @@
     "charge_time": "",
     "item_pool": [],
     "item_effect": "+25% chance to spawn an Angel Room instead of a Devil Room when defeating the floor's boss. Grants a +2.5% chance to convert Red Heart pickups into Eternal Hearts . Unlocks the door to the Mega Satan fight in The Chest or Dark Room when combined with Key Piece 2 . Spawns when defeating Uriel if not already in possession.",
-    "synergy": []
+    "synergy": [],
+    "quote": "???"
   },
   {
     "name": "Key Piece 2",
@@ -8520,7 +8757,8 @@
     "charge_time": "",
     "item_pool": [],
     "item_effect": "+25% chance to spawn an Angel Room instead of a Devil Room when defeating the floor's boss. Grants a +2.5% chance to convert Red Heart pickups into Eternal Hearts . Unlocks the door to the Mega Satan fight in The Chest or Dark Room when combined with Key Piece 1 . Spawns when defeating Gabriel if not already in possession.",
-    "synergy": []
+    "synergy": [],
+    "quote": "???"
   },
   {
     "name": "Experimental Treatment",
@@ -8553,7 +8791,8 @@
       "Greed Boss Room"
     ],
     "item_effect": "Grants 4 random stat increases and 2 random stat decreases. Each stat can change for a fixed amount: ±1 heart container. ±1 flat damage. ±0.5 fire rate. ±2.5 range. ±0.2 shot speed. ±0.2 speed. ±1 luck.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Some stats up, some stats down"
   },
   {
     "name": "Contract from Below",
@@ -8585,7 +8824,8 @@
       "Curse Room"
     ],
     "item_effect": "Any reward spawned from clearing a room is doubled, but has a 33% chance to be removed completely. Does not apply to trinkets or Pennies dropped in Greed Mode.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Wealth... but at what cost?"
   },
   {
     "name": "Infamy",
@@ -8624,7 +8864,8 @@
         "item": "Abyss",
         "details": "Spawns a cyan locust that has a 50% chance to destroy enemy projectiles upon contact."
       }
-    ]
+    ],
+    "quote": "Blocks damage... sometimes"
   },
   {
     "name": "Trinity Shield",
@@ -8661,7 +8902,8 @@
         "item": "Abyss",
         "details": "Spawns a cyan locust that has an 80% chance to destroy enemy projectiles upon contact."
       }
-    ]
+    ],
+    "quote": "You feel guarded"
   },
   {
     "name": "Tech.5",
@@ -8699,7 +8941,8 @@
         "item": "Abyss",
         "details": "Spawns an electrical cyan locust that has a chance to chain-zap enemies similar to the effects of  Jacob's Ladder. Zaps deal 0.1 damage."
       }
-    ]
+    ],
+    "quote": "It's still being tested..."
   },
   {
     "name": "20/20",
@@ -8736,7 +8979,8 @@
         "item": "Abyss",
         "details": "Spawns 2 red locusts that are linked to each other."
       }
-    ]
+    ],
+    "quote": "Double shot"
   },
   {
     "name": "Blue Map",
@@ -8768,7 +9012,8 @@
       "Greed Shop"
     ],
     "item_effect": "Reveals the locations of Secret Rooms and Super Secret Rooms on the map. Its effects appear as an icon next to the map.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Secrets"
   },
   {
     "name": "BFFS!",
@@ -8800,7 +9045,8 @@
       "Ultra Secret Room"
     ],
     "item_effect": "Increases the size of Isaac's familiars by 25%, and improves the effectiveness of most of them. Doubles the damage of familiars that deal damage through tears or contact damage. Increases the frequency of pickup-generating familiars dropping pickups. Grants unique synergies for some familiars. Check the synergies section of familiar pages for more details.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Your friends rule"
   },
   {
     "name": "Hive Mind",
@@ -8837,7 +9083,8 @@
         "item": "Abyss",
         "details": "Spawns a red locust that is 100% larger."
       }
-    ]
+    ],
+    "quote": "Giant spiders and flies"
   },
   {
     "name": "There's Options",
@@ -8867,7 +9114,8 @@
       "Shop"
     ],
     "item_effect": "Makes 2 items spawn after defeating a boss instead of one. Only one can be taken; the other will disappear. Two items will also spawn after clearing Boss Rush. Does not affect mini-boss drops. Does not affect the Mom fight drops.",
-    "synergy": []
+    "synergy": [],
+    "quote": "More options"
   },
   {
     "name": "BOGO Bombs",
@@ -8904,7 +9152,8 @@
         "item": "Abyss",
         "details": "Spawns a yellow locust that has a 30% chance to explode upon enemy contact, dealing 40 damage."
       }
-    ]
+    ],
+    "quote": "1+1 BOOM!"
   },
   {
     "name": "Starter Deck",
@@ -8936,7 +9185,8 @@
       "Crane Game"
     ],
     "item_effect": "On pickup Spawns a random card/rune. While held Allows Isaac to carry 2 cards/runes at once. Replaces all pills with cards. This works retroactively, affecting pills already spawned on the floor. Cards can be cycled through by using the drop button.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Extra card room"
   },
   {
     "name": "Little Baggy",
@@ -8967,7 +9217,8 @@
       "Greed Shop"
     ],
     "item_effect": "On pickup Spawns a random pill. While held Allows Isaac to carry 2 pills at once. Pills can be cycled through by using the drop button. Converts all cards into pills. This works retroactively.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Extra pill room"
   },
   {
     "name": "Magic Scab",
@@ -8999,7 +9250,8 @@
       "Ultra Secret Room"
     ],
     "item_effect": "+1 full Red Heart container. +1 luck. Heals 1 additional Red Heart.",
-    "synergy": []
+    "synergy": [],
+    "quote": "HP + luck up"
   },
   {
     "name": "Blood Clot",
@@ -9032,7 +9284,8 @@
       "Ultra Secret Room"
     ],
     "item_effect": "Applies the following stats to Isaac's left eye: +1 flat damage. +2.75 range. Can drop from destroying polyps in The Womb.",
-    "synergy": []
+    "synergy": [],
+    "quote": "DMG + range up"
   },
   {
     "name": "Screw",
@@ -9065,7 +9318,8 @@
       "Crane Game"
     ],
     "item_effect": "+0.5 tears. +0.2 shot speed.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Tears + shot speed up"
   },
   {
     "name": "Hot Bombs",
@@ -9103,7 +9357,8 @@
         "item": "Abyss",
         "details": "Spawns a yellow locust that explodes upon enemy contact, dealing 40 damage, and has a 30% chance to set enemies on fire."
       }
-    ]
+    ],
+    "quote": "Burning blast +5 bombs"
   },
   {
     "name": "Fire Mind",
@@ -9140,7 +9395,8 @@
         "item": "Abyss",
         "details": "Spawns an orange locust that sets enemies on fire."
       }
-    ]
+    ],
+    "quote": "Flaming tears"
   },
   {
     "name": "Missing No.",
@@ -9178,7 +9434,8 @@
         "item": "Abyss",
         "details": "Spawns a pink locust that has a chance to mimic random effects based on other Abyss locusts."
       }
-    ]
+    ],
+    "quote": "Syntax error"
   },
   {
     "name": "Dark Matter",
@@ -9216,7 +9473,8 @@
         "item": "Abyss",
         "details": "Spawns a black locust that has a chance to apply fear to enemies."
       }
-    ]
+    ],
+    "quote": "DMG up + fear shot"
   },
   {
     "name": "Black Candle",
@@ -9249,7 +9507,8 @@
       "Greed Curse Room"
     ],
     "item_effect": "On pickup +1 Black Heart. +15% chance for a devil/angel room to spawn after defeating the floor's boss. While held Prevents curses from appearing. Will immediately remove any curse on the current floor, except for Curse of the Labyrinth! . Removes teleportation effects from Cursed Eye and Cursed Penny .",
-    "synergy": []
+    "synergy": [],
+    "quote": "Curse immunity + evil up"
   },
   {
     "name": "Proptosis",
@@ -9281,7 +9540,8 @@
       "Ultra Secret Room"
     ],
     "item_effect": "+0.5 damage. ×2 tear size. Makes Isaac's tears shrink in size and lose damage the more time they stay airborne, starting at 3x damage and going down to 0 damage after 0.8 seconds.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Short range mega tears"
   },
   {
     "name": "Missing Page 2",
@@ -9315,7 +9575,8 @@
       "Greed Secret Room"
     ],
     "item_effect": "On pickup +1 Black Heart. While held If taking damage would leave Isaac at exactly one heart, deals 80 damage to every enemy in the room. Increases the damage dealt by The Necronomicon by +40.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Evil up. Your enemies will pay!"
   },
   {
     "name": "Smart Fly",
@@ -9359,7 +9620,8 @@
         "item": "Abyss",
         "details": "Spawns a purple locust that homes in on enemies."
       }
-    ]
+    ],
+    "quote": "Revenge fly"
   },
   {
     "name": "Dry Baby",
@@ -9399,7 +9661,8 @@
         "item": "Abyss",
         "details": "Spawns a cyan locust that has a 50% chance to destroy enemy projectiles upon contact."
       }
-    ]
+    ],
+    "quote": "Immortal friend"
   },
   {
     "name": "Juicy Sack",
@@ -9442,7 +9705,8 @@
         "item": "Abyss",
         "details": "Spawns a light grey locust that has a chance to slow enemies."
       }
-    ]
+    ],
+    "quote": "Sticky babies"
   },
   {
     "name": "Robo-Baby 2.0",
@@ -9486,7 +9750,8 @@
         "item": "Abyss",
         "details": "Spawns an electrical cyan locust that has a chance to chain-zap enemies similar to the effects of  Jacob's Ladder. Zaps deal 0.1 damage."
       }
-    ]
+    ],
+    "quote": "We worked out all the kinks"
   },
   {
     "name": "Rotten Baby",
@@ -9521,7 +9786,8 @@
       "Rotten Beggar"
     ],
     "item_effect": "Spawns a familiar that follows Isaac and spawns friendly Blue Flies when in a room with enemies and holding down a fire button. The familiar can spawn only one Blue Fly at a time. No additional Blue Flies will be spawned until the first one is killed (minimum delay of 1.36 seconds). Can drop from destroying polyps in Corpse.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Infested friend"
   },
   {
     "name": "Headless Baby",
@@ -9561,7 +9827,8 @@
         "item": "BFFS!",
         "details": "×2 damage."
       }
-    ]
+    ],
+    "quote": "Bloody friend"
   },
   {
     "name": "Leech",
@@ -9600,7 +9867,8 @@
         "item": "BFFS!",
         "details": "×2 damage."
       }
-    ]
+    ],
+    "quote": "Blood sucker"
   },
   {
     "name": "Mystery Sack",
@@ -9640,7 +9908,8 @@
         "item": "BFFS!",
         "details": "The familiar drops pickups every 4 or 5 rooms."
       }
-    ]
+    ],
+    "quote": "?"
   },
   {
     "name": "BBF",
@@ -9684,7 +9953,8 @@
         "item": "Abyss",
         "details": "Spawns a yellow locust that has a 30% chance to explode upon enemy contact, dealing 40 damage."
       }
-    ]
+    ],
+    "quote": "Big Beautiful Fly"
   },
   {
     "name": "Bob's Brain",
@@ -9728,7 +9998,8 @@
         "item": "Abyss",
         "details": "Spawns a yellow locust that explodes upon enemy contact, dealing 40 damage, and has a 30% chance to poison enemies."
       }
-    ]
+    ],
+    "quote": "Explosive thoughts"
   },
   {
     "name": "Best Bud",
@@ -9767,7 +10038,8 @@
         "item": "BFFS!",
         "details": "×2 damage."
       }
-    ]
+    ],
+    "quote": "Sworn protector"
   },
   {
     "name": "Lil Brimstone",
@@ -9807,7 +10079,8 @@
         "item": "BFFS!",
         "details": "×2 damage."
       }
-    ]
+    ],
+    "quote": "Evil friend"
   },
   {
     "name": "Isaac's Heart",
@@ -9850,7 +10123,8 @@
         "item": "Abyss",
         "details": "Spawns a blue locust that has a chance to punch enemies back."
       }
-    ]
+    ],
+    "quote": "Protect it"
   },
   {
     "name": "Lil Haunt",
@@ -9893,7 +10167,8 @@
         "item": "Abyss",
         "details": "Spawns a black locust that has a chance to apply fear to enemies."
       }
-    ]
+    ],
+    "quote": "Fear him"
   },
   {
     "name": "Dark Bum",
@@ -9926,7 +10201,8 @@
       "Baby Shop"
     ],
     "item_effect": "Spawns a familiar that follows Isaac and collects red hearts. For every one and a half red hearts collected, it will spawn one of the following: • Black Heart (40% chance) • Card or rune (20% chance) • Pill (20% chance) • Blue Spider (10% chance) • Enemy Spider (10% chance)",
-    "synergy": []
+    "synergy": [],
+    "quote": "He wants to take your life"
   },
   {
     "name": "Big Fan",
@@ -9970,7 +10246,8 @@
         "item": "Abyss",
         "details": "Spawns a cyan locust that is 60% slower, 25% larger, and has a 50% chance to destroy enemy projectiles upon contact."
       }
-    ]
+    ],
+    "quote": "Fat protector"
   },
   {
     "name": "Sissy Longlegs",
@@ -10018,7 +10295,8 @@
         "item": "Mom's Wig",
         "details": "Up to 10 Blue Spiders can be spawned in the room."
       }
-    ]
+    ],
+    "quote": "She loves you"
   },
   {
     "name": "Punching Bag",
@@ -10056,7 +10334,8 @@
         "item": "Abyss",
         "details": "Spawns a cyan locust that has a 30% chance to destroy enemy projectiles upon contact."
       }
-    ]
+    ],
+    "quote": "Scape goat"
   },
   {
     "name": "How to Jump",
@@ -10098,7 +10377,8 @@
         "item": "The Book of Belial combined with Judas' Birthright",
         "details": "Jumping through enemies deals 2 + 0.2 × CurrentFloor contact damage and sets them on fire. The burn deals damage equal to the damage stat, and ticks up to 5 times."
       }
-    ]
+    ],
+    "quote": "It's time you learned how"
   },
   {
     "name": "D100",
@@ -10136,7 +10416,8 @@
         "item": "Book of Virtues",
         "details": "Removes all of Isaac's wisps and gives him one random wisp for every 2 items rerolled. Does not reroll Book of Virtues in the process."
       }
-    ]
+    ],
+    "quote": "REEROLLLLL!"
   },
   {
     "name": "D4",
@@ -10174,7 +10455,8 @@
         "item": "Book of Virtues",
         "details": "Removes all of Isaac's wisps and gives him one random wisp for every 2 items rerolled. Does not reroll Book of Virtues in the process."
       }
-    ]
+    ],
+    "quote": "Reroll into something else"
   },
   {
     "name": "D10",
@@ -10212,7 +10494,8 @@
         "item": "Book of Virtues",
         "details": "Spawns orange wisps in the middle ring. Tears shot from these wisps have a 10% chance to devolve enemies."
       }
-    ]
+    ],
+    "quote": "Reroll enemies"
   },
   {
     "name": "Blank Card",
@@ -10251,7 +10534,8 @@
         "item": "Book of Virtues",
         "details": "Spawns card-like wisps in the center ring. Enemies killed by the wisps' tears have a 15% chance to drop a card."
       }
-    ]
+    ],
+    "quote": "Card mimic"
   },
   {
     "name": "Book of Secrets",
@@ -10289,7 +10573,8 @@
         "item": "Book of Virtues",
         "details": "Spawns question-mark-looking wisps in the middle ring. These wisps invoke the effect of  Cracked Orb when destroyed."
       }
-    ]
+    ],
+    "quote": "Tome of knowledge"
   },
   {
     "name": "Box of Spiders",
@@ -10326,7 +10611,8 @@
         "item": "Book of Virtues",
         "details": "Spawns wisps in the outer ring instead of spiders. Wisps spawn blue spiders when destroyed, one spider per wisp."
       }
-    ]
+    ],
+    "quote": "It's a box of spiders"
   },
   {
     "name": "Red Candle",
@@ -10369,7 +10655,8 @@
         "item": "Abyss",
         "details": "Spawns an orange locust that sets enemies on fire."
       }
-    ]
+    ],
+    "quote": "Flame on"
   },
   {
     "name": "The Jar",
@@ -10411,7 +10698,8 @@
         "item": "The Book of Belial combined with Judas' Birthright",
         "details": "Instead of dropping hearts on the floor, The Jar consumes up to one full heart at a time, giving a temporary   +0.66 damage for each half heart consumed, and spawns a puddle of creep that deals 2 damage per tick (20 per second)."
       }
-    ]
+    ],
+    "quote": "Save your life"
   },
   {
     "name": "Flush!",
@@ -10448,7 +10736,8 @@
         "item": "Book of Virtues",
         "details": "Spawns brown wisps in the middle ring. An additional wisp is spawned for every enemy turned into poop."
       }
-    ]
+    ],
+    "quote": "..."
   },
   {
     "name": "Satanic Bible",
@@ -10487,7 +10776,8 @@
         "item": "Book of Virtues",
         "details": "Spawns black wisps in the middle ring that look like a red inverted cross. Each wisp adds a +10% chance for a devil room to appear."
       }
-    ]
+    ],
+    "quote": "Reusable evil... but at what cost?"
   },
   {
     "name": "Head of Krampus",
@@ -10521,7 +10811,8 @@
         "item": "Book of Virtues",
         "details": "Spawns red wisps in the middle ring that fire small Brimstone lasers in the cardinal directions when destroyed. The lasers deal the wisps' tear damage per tick, and can hit enemies up to 20 times."
       }
-    ]
+    ],
+    "quote": "Krampus rage"
   },
   {
     "name": "Butter Bean",
@@ -10564,7 +10855,8 @@
         "item": "Abyss",
         "details": "Spawns a blue locust that has a chance to punch enemies back."
       }
-    ]
+    ],
+    "quote": "Reusable knock-back"
   },
   {
     "name": "Magic Fingers",
@@ -10607,7 +10899,8 @@
         "item": "The Book of Belial combined with Judas' Birthright",
         "details": "Has a 25% chance to invoke the effect of  Golden Razor."
       }
-    ]
+    ],
+    "quote": "Pay to win"
   },
   {
     "name": "Converter",
@@ -10644,7 +10937,8 @@
         "item": "Book of Virtues",
         "details": "Spawns heart-like wisps in the middle ring that have slightly higher health than average. These wisps can be healed by picking up red hearts from the ground."
       }
-    ]
+    ],
+    "quote": "Convert your soul"
   },
   {
     "name": "Pandora's Box",
@@ -10687,7 +10981,8 @@
         "item": "The Book of Belial combined with Judas' Birthright",
         "details": "In addition to the regular payout, also spawns one of the following familiars:  Blood Puppy,  Dark Bum,  Demon Baby,  Incubus,  Lil Abaddon,  Lil Brimstone,  Succubus, or  Twisted Pair."
       }
-    ]
+    ],
+    "quote": "? ?"
   },
   {
     "name": "Unicorn Stump",
@@ -10728,7 +11023,8 @@
         "item": "Abyss",
         "details": "Spawns a cyan locust that has a 50% chance to destroy enemy projectiles upon contact."
       }
-    ]
+    ],
+    "quote": "You feel stumped"
   },
   {
     "name": "Taurus",
@@ -10759,7 +11055,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "-0.3 speed. When in a room with enemies, Isaac's speed gradually increases at a rate of +0.065 per tick. Once the speed reaches 2.0, it activates My Little Unicorn for 5 seconds, granting invulnerability, and reseting the speed bonus afterward. The effect can be activated only once per room. If Isaac already has 2.0 speed, the effect will activate immediately upon entering a new room.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Speed down + rage is building"
   },
   {
     "name": "Aries",
@@ -10796,7 +11093,8 @@
         "item": "Abyss",
         "details": "Spawns a blue locust that has a chance to punch enemies back."
       }
-    ]
+    ],
+    "quote": "Ramming speed"
   },
   {
     "name": "Cancer",
@@ -10827,7 +11125,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "+3 Soul Hearts. Taking damage activates The Wafer effect for the duration of the room, reducing all damage taken to half a heart.",
-    "synergy": []
+    "synergy": [],
+    "quote": "HP up + you feel protected"
   },
   {
     "name": "Leo",
@@ -10858,7 +11157,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "+20% size. Does not affect Isaac's hitbox. Allows Isaac to destroy obstacles by walking into them.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Stompy"
   },
   {
     "name": "Virgo",
@@ -10895,7 +11195,8 @@
         "item": "Abyss",
         "details": "Spawns a cyan locust that has a 30% chance to destroy enemy projectiles upon contact."
       }
-    ]
+    ],
+    "quote": "You feel refreshed and protected"
   },
   {
     "name": "Libra",
@@ -10926,7 +11227,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "+6 coins. +6 bombs. +6 keys. Continually balances Isaac's primary stats: damage, range, tears and speed. Stats are rebalanced in a way that attempts to bring together the highest and lowest stats. Rebalacing happens all the time, meaning picking up new items, activating cards/pills, etc, will have an effect on all 4 previously mentioned stats.",
-    "synergy": []
+    "synergy": [],
+    "quote": "You feel balanced"
   },
   {
     "name": "Scorpio",
@@ -10963,7 +11265,8 @@
         "item": "Abyss",
         "details": "Spawns a green locust that poisons enemies."
       }
-    ]
+    ],
+    "quote": "Poison tears"
   },
   {
     "name": "Sagittarius",
@@ -10994,7 +11297,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "+0.2 speed. Grants piercing tears that can pass through enemies.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Piercing shots + speed up"
   },
   {
     "name": "Capricorn",
@@ -11025,7 +11329,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "+1 full Red Heart container. +0.5 damage. +0.1 speed. +0.75 range. +0.5 fire rate. +1 bomb. +1 penny. +1 key.",
-    "synergy": []
+    "synergy": [],
+    "quote": "All stats up"
   },
   {
     "name": "Aquarius",
@@ -11056,7 +11361,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "Makes Isaac leave a trail of blue creep on the ground behind him that damages enemies walking over it. The creep deals 66% of Isaac's damage 10 times per second. The creep inherits Isaac's tear effects and changes color based on them. Chance-based tear effects will also have a chance to be applied whenever enemies walk over the creep. Has a 1% chance of being dropped upon defeating Lil Blub.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Trail of tears"
   },
   {
     "name": "Pisces",
@@ -11093,7 +11399,8 @@
         "item": "Abyss",
         "details": "Spawns a blue locust that has a chance to punch enemies back."
       }
-    ]
+    ],
+    "quote": "Tears up + knock-back shot"
   },
   {
     "name": "Eve's Mascara",
@@ -11130,7 +11437,8 @@
         "item": "Abyss",
         "details": "Spawns a black locust that is 20% slower, and 25% larger."
       }
-    ]
+    ],
+    "quote": "DMG up, tears + shot speed down"
   },
   {
     "name": "Judas' Shadow",
@@ -11161,7 +11469,8 @@
       "Greed Devil Room"
     ],
     "item_effect": "+1 extra life. Upon death, respawns Isaac as Black Judas with 2 Black Hearts in the most recent non-hostile room. If playing as Tainted Judas , respawns as that character instead.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Sweet revenge"
   },
   {
     "name": "Maggy's Bow",
@@ -11192,7 +11501,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "+1 full Red Heart container. Heals 1 additional Red Heart. Makes all Red Hearts heal for double their value.",
-    "synergy": []
+    "synergy": [],
+    "quote": "HP up + you feel healthy"
   },
   {
     "name": "Holy Mantle",
@@ -11230,7 +11540,8 @@
         "item": "Abyss",
         "details": "Spawns a cyan locust that destroys enemy projectiles upon contact."
       }
-    ]
+    ],
+    "quote": "Holy shield"
   },
   {
     "name": "Thunder Thighs",
@@ -11261,7 +11572,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "+1 full Red Heart container. -0.4 speed. Allows Isaac to destroy obstacles by walking into them. Has a 1% chance of being dropped upon defeating Mega Fatty.",
-    "synergy": []
+    "synergy": [],
+    "quote": "HP up + speed down + you feel stompy"
   },
   {
     "name": "Strange Attractor",
@@ -11298,7 +11610,8 @@
         "item": "Abyss",
         "details": "Spawns a grey locust that has a chance to magnetize enemies."
       }
-    ]
+    ],
+    "quote": "Magnetic tears"
   },
   {
     "name": "Cursed Eye",
@@ -11332,7 +11645,8 @@
       "Greed Secret Room"
     ],
     "item_effect": "Grants a charge-attack which fires a tight burst of up to 5 shots. The charge can be released before fully charged but will shoot fewer tears. Taking damage while charging (not fully charged) will teleport Isaac into another room. The teleportation effect can be removed with Black Candle .",
-    "synergy": []
+    "synergy": [],
+    "quote": "Cursed charge shot"
   },
   {
     "name": "Mysterious Liquid",
@@ -11369,7 +11683,8 @@
         "item": "Abyss",
         "details": "Spawns a green locust that has a chance to poison enemies."
       }
-    ]
+    ],
+    "quote": "Toxic splash damage"
   },
   {
     "name": "Gemini",
@@ -11407,7 +11722,8 @@
         "item": "BFFS!",
         "details": "×2 damage."
       }
-    ]
+    ],
+    "quote": "Conjoined friend"
   },
   {
     "name": "Cain's Other Eye",
@@ -11444,7 +11760,8 @@
         "item": "BFFS!",
         "details": "deals 50% more damage than Isaac."
       }
-    ]
+    ],
+    "quote": "Near-sighted friend"
   },
   {
     "name": "???'s Only Friend",
@@ -11483,7 +11800,8 @@
         "item": "BFFS!",
         "details": "×2 damage."
       }
-    ]
+    ],
+    "quote": "Controlled friend"
   },
   {
     "name": "Samson's Chains",
@@ -11522,7 +11840,8 @@
         "item": "BFFS!",
         "details": "×2 damage."
       }
-    ]
+    ],
+    "quote": "The ol' ball and chain"
   },
   {
     "name": "Mongo Baby",
@@ -11560,7 +11879,8 @@
         "item": "BFFS!",
         "details": "×2 damage."
       }
-    ]
+    ],
+    "quote": "Mongo friend"
   },
   {
     "name": "Isaac's Tears",
@@ -11602,7 +11922,8 @@
         "item": "The Book of Belial combined with Judas' Birthright",
         "details": "Fires a ring of 10 tears instead of 8. Tears are piercing and spectral, and deal damage equal to 1.4 × DamageStat + 5."
       }
-    ]
+    ],
+    "quote": "Collected tears"
   },
   {
     "name": "Undefined",
@@ -11638,7 +11959,8 @@
         "item": "Book of Virtues",
         "details": "Spawns blue glitched wisps in the middle ring that fire tears with the  Playdough Cookie effects."
       }
-    ]
+    ],
+    "quote": "Undefined"
   },
   {
     "name": "Scissors",
@@ -11675,7 +11997,8 @@
         "item": "Book of Virtues",
         "details": "Spawns red wisps in the middle ring that fire 2-3 tears at a time. The tears are innacurate, travel in an arc, and have variable range."
       }
-    ]
+    ],
+    "quote": "Lose your head"
   },
   {
     "name": "Breath of Life",
@@ -11722,7 +12045,8 @@
         "item": "Abyss",
         "details": "Spawns a cyan locust that has a 30% chance to destroy enemy projectiles upon contact."
       }
-    ]
+    ],
+    "quote": "Invincibility at a cost"
   },
   {
     "name": "The Polaroid",
@@ -11750,7 +12074,8 @@
     "charge_time": "",
     "item_pool": [],
     "item_effect": "Activates the Book of Shadows effect if Isaac has half a red heart or no red hearts at all after taking damage, creating a shield that negates damage for 5 seconds. Grants entrance to the Chest level after beating Isaac in the Cathedral. Opens the door in the starting room of Depths II that leads to the Ascent path, getting consumed in the process. Drops after killing Mom, alongisde The Negative .",
-    "synergy": []
+    "synergy": [],
+    "quote": "Fate chosen"
   },
   {
     "name": "The Negative",
@@ -11778,7 +12103,8 @@
     "charge_time": "",
     "item_pool": [],
     "item_effect": "+1 damage. Activates The Necronomicon effect if Isaac has half a red heart or no red hearts at all after taking damage, dealing 40 damage to all enemies in the room. Grants entrance to the Dark Room level after beating Satan in Sheol. Opens the door in the starting room of Depths II that leads to the Ascent path, getting consumed in the process. Drops after killing Mom, alongisde The Polaroid .",
-    "synergy": []
+    "synergy": [],
+    "quote": "Fate chosen"
   },
   {
     "name": "The Ludovico Technique",
@@ -11809,7 +12135,8 @@
       "Greed Treasure Room"
     ],
     "item_effect": "+0.2 shot speed. Replaces Isaac's tears with a single controllable tear that hovers over obstacles and deals constant damage to enemies when held over them. The movement speed of the tear is determined by the shot speed stat. The hits per second are determined by the tears stat, maxing out at 30 ticks per second.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Controlled tears"
   },
   {
     "name": "Soy Milk",
@@ -11846,7 +12173,8 @@
         "item": "Abyss",
         "details": "Spawns a locust that is 2x faster, 70% smaller, and deals damage once every 3 ticks instead of 7."
       }
-    ]
+    ],
+    "quote": "DMG down + tears way up"
   },
   {
     "name": "Godhead",
@@ -11883,7 +12211,8 @@
         "item": "Abyss",
         "details": "Spawns a white locust that emits a  Godhead aura while charging which deals 2  damage per tick (60 per second)."
       }
-    ]
+    ],
+    "quote": "God tears"
   },
   {
     "name": "Lazarus' Rags",
@@ -11916,7 +12245,8 @@
       "Greed Angel Room"
     ],
     "item_effect": "+1 extra life. Upon death, respawns Isaac as Lazarus II in the current room with one less heart container (but no less than 1), the Anemic item and a permanent +0.5 damage. Traveling to the next floor after the effect has been activated will revert the character into the regular Lazarus form, with his inherent extra life effect. If playing as Tainted Lazarus , revives as that character instead.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Eternal life?"
   },
   {
     "name": "The Mind",
@@ -11949,7 +12279,8 @@
       "Greed Angel Room"
     ],
     "item_effect": "Grants the effects of Blue Map , Treasure Map and The Compass , revealing the entire floor layout, including Secret Rooms and Super Secret Rooms. Its effects appear as an icon next to the map.",
-    "synergy": []
+    "synergy": [],
+    "quote": "I know all"
   },
   {
     "name": "The Body",
@@ -11983,7 +12314,8 @@
       "Ultra Secret Room"
     ],
     "item_effect": "+3 full Red Heart containers.",
-    "synergy": []
+    "synergy": [],
+    "quote": "I feel all"
   },
   {
     "name": "The Soul",
@@ -12016,7 +12348,8 @@
       "Greed Angel Room"
     ],
     "item_effect": "+2 Soul Hearts. Grants a pulsing blue aura that repels enemies and projectiles. The power of the repel force is random.",
-    "synergy": []
+    "synergy": [],
+    "quote": "I am all"
   },
   {
     "name": "Dead Onion",
@@ -12054,7 +12387,8 @@
         "item": "Abyss",
         "details": "Spawns a red locust that is 60% slower."
       }
-    ]
+    ],
+    "quote": "Toxic aura tears"
   },
   {
     "name": "Broken Watch",
@@ -12091,7 +12425,8 @@
         "item": "Abyss",
         "details": "Spawns a light grey locust that has a chance to slow enemies."
       }
-    ]
+    ],
+    "quote": "I think it's broken"
   },
   {
     "name": "The Boomerang",
@@ -12134,7 +12469,8 @@
         "item": "Abyss",
         "details": "Spawns a grey locust that has a chance to petirfy enemies."
       }
-    ]
+    ],
+    "quote": "It will never leave you"
   },
   {
     "name": "Safety Pin",
@@ -12165,7 +12501,8 @@
       "Greed Boss Room"
     ],
     "item_effect": "+1 Black Heart. +2.5 range. +0.16 shot speed.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Evil + range + shot speed up"
   },
   {
     "name": "Caffeine Pill",
@@ -12197,7 +12534,8 @@
       "Greed Boss Room"
     ],
     "item_effect": "On pickup Gives a random pill. While held +0.3 speed. -10% size. -4% hitbox size.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Speed up + size down"
   },
   {
     "name": "Torn Photo",
@@ -12230,7 +12568,8 @@
       "Old Chest"
     ],
     "item_effect": "+0.7 tears. +0.16 shot speed.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Tears + shot speed up"
   },
   {
     "name": "Blue Cap",
@@ -12261,7 +12600,8 @@
       "Greed Boss Room"
     ],
     "item_effect": "+1 full Red Heart container. +0.7 tears. -0.16 shot speed.",
-    "synergy": []
+    "synergy": [],
+    "quote": "HP + tears up + shot speed down"
   },
   {
     "name": "Latch Key",
@@ -12294,7 +12634,8 @@
       "Greed Boss Room"
     ],
     "item_effect": "+1 Soul Heart. +1 luck. Spawns 2 keys, with them having a very small chance to be of different variant.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Luck up"
   },
   {
     "name": "Match Book",
@@ -12326,7 +12667,8 @@
       "Greed Boss Room"
     ],
     "item_effect": "+1 Black Heart. Spawns 3 bombs around Isaac. Spawns the Match Stick if it hasn't yet been encountered.",
-    "synergy": []
+    "synergy": [],
+    "quote": "Evil up"
   },
   {
     "name": "Synthoil",
@@ -12358,7 +12700,8 @@
       "Greed Boss Room"
     ],
     "item_effect": "+1 damage. +2.5 range.",
-    "synergy": []
+    "synergy": [],
+    "quote": "DMG + range up"
   },
   {
     "name": "A Snack",
@@ -12389,6 +12732,7 @@
       "Greed Boss Room"
     ],
     "item_effect": "+1 full Red Heart container. Heals 1 additional Red Heart.",
-    "synergy": []
+    "synergy": [],
+    "quote": "HP up"
   }
 ]

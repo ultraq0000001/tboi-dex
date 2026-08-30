@@ -1,0 +1,134 @@
+name: Require owner approval
+
+# Gates merges into `main` on explicit approval from a repository owner.
+# A workflow cannot stop a merge by itself --- make this check *required* by
+# adding it to the `main` branch protection rules (Settings > Branches) so the
+# branch stays unmergeable until the check passes.
+#
+# Approval markers recognized (from an allowed approver):
+#   - A GitHub review with state "APPROVED", or
+#   - A pull-request comment matching the exact pattern:  @<approver> approve
+#
+# Allowed approvers are configured below in the ALLOWED_APPROVERS list.
+# Add more users as needed.
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+    branches: [main]
+  pull_request_review:
+    types: [submitted, edited, dismissed]
+    branches: [main]
+
+permissions:
+  contents: read
+  pull-requests: read
+  checks: write
+
+jobs:
+  require-owner-approval:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Evaluate owner approval
+        id: evaluate
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          # Comma/space-separated list of usernames allowed to approve.
+          ALLOWED_APPROVERS: ultraq0000001
+        run: |
+          set -uo pipefail
+
+          if [[ -z "${PR_NUMBER:-}" ]]; then
+            echo "No pull request associated with this event; skipping."
+            echo "approved=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          # Normalize the allowed approver list (lowercase, trimmed).
+          normalized=""
+          for a in ${ALLOWED_APPROVERS//,/ }; do
+            normalized="$normalized ${a,,}"
+          done
+          echo "Allowed approvers:$normalized"
+
+          approved=false
+          why="no-approval-found"
+
+          # 1) GitHub reviews with state APPROVED
+          echo "--- scanning reviews ---"
+          while IFS= read -r login; do
+            [[ -z "$login" ]] && continue
+            if echo "$normalized" | grep -qw "${login,,}"; then
+              approved=true
+              why="approved-by-review:$login"
+              echo "FOUND approval via review from $login"
+            fi
+          done < <(gh api \
+            "repos/{owner}/{repo}/pulls/$PR_NUMBER/reviews" \
+            --jq -r '.[] | select(.state=="APPROVED") | .user.login' | sort -u)
+
+          # 2) Issue/PR comments matching "@<approver> approve"
+          if [[ "$approved" == "false" ]]; then
+            echo "--- scanning comments ---"
+            while IFS= read -r user_and_body; do
+              [[ -z "$user_and_body" ]] && continue
+              user="${user_and_body%%|*}"
+              body="${user_and_body#*|}"
+              if echo "$normalized" | grep -qw "${user,,}"; then
+                if echo "$body" | grep -Eiq "@${user}[[:space:]]+approve"; then
+                  approved=true
+                  why="approved-by-comment:$user"
+                  echo "FOUND approval via comment from $user"
+                fi
+              fi
+            done < <(gh api \
+              "repos/{owner}/{repo}/issues/$PR_NUMBER/comments" \
+              --jq -r '.[] | .user.login + "|" + .body')
+          fi
+
+          echo "approved=$approved" >> "$GITHUB_OUTPUT"
+          echo "why=$why" >> "$GITHUB_OUTPUT"
+
+      - name: Report decision
+        uses: actions/github-script@v7
+        env:
+          APPROVED: ${{ steps.evaluate.outputs.approved }}
+          WHY: ${{ steps.evaluate.outputs.why }}
+        with:
+          script: |
+            const approved = process.env.APPROVED === 'true';
+            const why = process.env.WHY;
+            const owner = context.repo.owner;
+            const checkName = 'Owner approval (main)';
+
+            let conclusion, title, summary;
+            if (approved) {
+              conclusion = 'success';
+              title = 'Owner approval present';
+              summary = 'Merge to `main` is permitted. Reason: ' + why + '.';
+            } else {
+              conclusion = 'failure';
+              title = 'Owner approval required';
+              summary = 'Merges to `main` require explicit approval from a repository owner '
+                + '(`@' + owner + '`).\n\n'
+                + 'Add either:\n'
+                + '  - a repository review with status APPROVED, or\n'
+                + '  - a pull-request comment like `@' + owner + ' approve`.\n\n'
+                + 'Then make this check a **required status check** in the `main` branch protection '
+                + 'rules (Settings > Branches) so the branch cannot merge until it passes.';
+            }
+
+            await github.rest.checks.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              name: checkName,
+              head_sha: context.sha,
+              status: 'completed',
+              conclusion: conclusion,
+              output: { title, summary },
+            });
+
+            if (!approved) {
+              core.setFailed('Repository owner approval is required to merge to main.');
+            }
