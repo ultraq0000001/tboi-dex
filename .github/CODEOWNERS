@@ -1,0 +1,4 @@
+# Default owner for every file in the repo. Combined with a branch protection
+# rule requiring this code owner's review/approval, this restricts merges to
+# protected branches (e.g. main) without repository owner approval.
+* @ultraq0000001
