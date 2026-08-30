@@ -17,15 +17,17 @@ TBOI PockeDEX is a cross-platform mobile application developed using Expo. The p
 ## Project Structure
 
 ```
+App.tsx               # Navigation container + stack
 src/
-├── app/           # App configuration and navigation setup
-├── components/    # Reusable UI components
-├── data/          # Data models, API calls, utilities
-├── screens/       # Screen components for React Navigation
-└── types/         # TypeScript type definitions
+├── components/       # Reusable UI components (PixelIcon, ItemTile, CategoryTile, QualityStars)
+├── data/             # Bundled item data (items_rebirth.json, items.ts) + icon registries
+├── screens/          # Home, ItemList, ItemDetail, ComingSoon
+└── types/            # TypeScript type definitions (item, navigation)
 
-utils/             # Utility functions and helpers
-assets/            # Images, icons, and templates
+assets/
+  media/Collectibles/ # Item icon PNG sprites (source for generated registry)
+  templates/          # HTML/CSS scraping templates
+scripts/              # Data/icon generation tooling (e.g. generate-item-icons.mjs)
 ```
 
 ## Features & Capabilities
@@ -34,17 +36,33 @@ assets/            # Images, icons, and templates
 - iOS tablet support enabled
 - Custom navigation structure using React Native Stack Navigator
 - Responsive design with dark mode interface
+- 341-item Rebirth dataset with searchable grid + detail view
+- Native pixel-perfect (nearest-neighbor) icon rendering via `expo-pixel-perfect`
 - Web scraping capabilities for data fetching
 - TypeScript-first development for type safety
 
-## Application pages hierarchy 
+## Application pages
 
-### HOME
+- **Home** — category hub grid (Items + 13 planned categories; non-Items open a "Coming Soon" placeholder)
+- **Items** — searchable 3-column grid with type filter chips (All / Active / Passive / Familiars)
+- **Item Detail** — effect, quality stars, item pools, unlock info
+- **Coming Soon** — generic placeholder for categories without data yet
 
-Application landing page. Consist of three sections: `Header`, `Body`, `Footer`.
+## Data
 
-*Header*
-- 
+The app ships a **~341-item Rebirth dataset** bundled locally in
+`src/data/items_rebirth.json`, loaded statically by `src/data/items.ts` (no
+network calls). Item icons live in `assets/media/Collectibles/*.png`.
+
+Icon registrations are **auto-generated** — don't hand-edit
+`src/data/generatedItemIcons.ts`. After adding/removing icon files or changing
+the item JSON, regenerate it:
+
+```bash
+node scripts/generate-item-icons.mjs
+```
+
+`src/data/trinkets_rebirth.json` is a candidate dataset not wired up yet.
 
 ## Development
 
@@ -53,9 +71,9 @@ Application landing page. Consist of three sections: `Header`, `Body`, `Footer`.
 | Script | Description |
 |--------|-------------|
 | `start` | Start Expo development server |
-| `android` | Start development server for Android |
-| `ios` | Start development server for iOS |
-| `web` | Start development server for Web |
+| `android` | Build + run on Android (`expo run:android` — needs a native build/dev build) |
+| `ios` | Build + run on iOS (`expo run:ios` — needs Xcode) |
+| `web` | Start Expo dev server for Web |
 
 ### Available from CLI
 
