@@ -1,6 +1,6 @@
-import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { Item } from '../types/item';
-import { itemIcons } from '../data/itemIcons';
+import { PixelIcon } from './PixelIcon';
 
 const TYPE_COLORS: Record<Item['type'], string> = {
   passive: '#4f8ef7',
@@ -10,7 +10,6 @@ const TYPE_COLORS: Record<Item['type'], string> = {
 };
 
 export function ItemTile({ item, onPress }: { item: Item; onPress: () => void }) {
-  const icon = itemIcons[item.iconKey];
   const initials = item.name
     .replace(/^(The|A)\s+/i, '')
     .slice(0, 2)
@@ -19,11 +18,7 @@ export function ItemTile({ item, onPress }: { item: Item; onPress: () => void })
   return (
     <Pressable style={styles.tile} onPress={onPress}>
       <View style={[styles.icon, { borderColor: TYPE_COLORS[item.type] }]}>
-        {icon ? (
-          <Image source={icon} style={styles.iconImage} resizeMode="contain" />
-        ) : (
-          <Text style={styles.initials}>{initials}</Text>
-        )}
+        <PixelIcon iconKey={item.iconKey} size={52} initials={initials} />
       </View>
       <Text style={styles.name} numberOfLines={2}>
         {item.name}
@@ -48,15 +43,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginBottom: 6,
     overflow: 'hidden',
-  },
-  iconImage: {
-    width: '80%',
-    height: '80%',
-  },
-  initials: {
-    color: '#eee',
-    fontWeight: '700',
-    fontSize: 18,
   },
   name: {
     color: '#ddd',
