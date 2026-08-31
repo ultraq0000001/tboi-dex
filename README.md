@@ -52,7 +52,8 @@ scripts/              # Data/icon generation tooling (e.g. generate-item-icons.m
 
 The app ships a **~341-item Rebirth dataset** bundled locally in
 `src/data/items_rebirth.json`, loaded statically by `src/data/items.ts` (no
-network calls). Item icons live in `assets/media/Collectibles/*.png`.
+network calls). Item icons live in `assets/media/Collectibles/` as
+`collectible_<id>_icon.png`.
 
 Icon registrations are **auto-generated** — don't hand-edit
 `src/data/generatedItemIcons.ts`. After adding/removing icon files or changing

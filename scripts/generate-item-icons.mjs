@@ -1,16 +1,15 @@
 /**
  * Generates src/data/generatedItemIcons.ts — a static require() registry of
- * every item icon found under assets/media/Collectibles, plus the icon
- * filename resolver used by src/data/items.ts.
+ * every item icon under assets/media/Collectibles, keyed by the id-based icon
+ * filename (collectible_<id>_icon.png), plus the resolver that maps an item
+ * in items_rebirth.json to its icon via that item's `icon` field.
  *
  * Metro requires `require()` calls to reference static paths, so this script
  * is run before bundling whenever the item dataset or icon assets change:
  *
  *   node scripts/generate-item-icons.mjs
  *
- * The registry is keyed by icon filename (e.g. "Collectible_Sad_Onion_icon.png")
- * and generated ONLY for items present in items_rebirth.json, keeping the
- * bundle small.
+ * Both the registry and the resolver live here so they can never drift apart.
  */
 import { readFileSync, readdirSync, writeFileSync } from 'fs';
 import { fileURLToPath } from 'url';
@@ -23,64 +22,29 @@ const iconsDir = join(root, 'assets', 'media', 'Collectibles');
 
 const items = JSON.parse(readFileSync(join(dataDir, 'items_rebirth.json'), 'utf8'));
 
-const iconFiles = readdirSync(iconsDir).filter((f) => f.toLowerCase().endsWith('.png'));
-const iconSet = new Set(iconFiles);
+// Only id-based icon files that correspond to an item in the dataset.
+const idPattern = /^collectible_(\d+)_icon\.png$/;
+const allFiles = readdirSync(iconsDir).filter((f) => f.toLowerCase().endsWith('.png'));
+const itemIds = new Set(items.map((i) => String(i.id)));
+const registryFiles = allFiles.filter((f) => idPattern.test(f) && itemIds.has(idPattern.exec(f)[1]));
 
 /**
  * Resolve the icon filename for an item, or null if no icon exists.
- * Rule: prefer the item's `image` field when present; otherwise derive from
- * the item name using the wiki's filename convention (strip leading "The",
- * spaces and "/" become "_", other punctuation is kept).
+ * Uses the item's id-based `icon` field, and only returns it when the file is
+ * actually part of the registry (so a missing file degrades to null).
  */
 function iconFilenameForItem(item) {
-  if (item.image && iconSet.has(item.image)) return item.image;
-
-  let name = String(item.name || '').trim();
-  if (!name) return null;
-
-  const keep = (s) => s.replace(/\//g, '_').replace(/\s+/g, '_');
-
-  const baseVariants = [
-    keep(name),
-    keep(name.replace(/^The\s+/, '')),
-  ];
-
-  // Exceptions that don't follow the naming rule.
-  const exceptions = {
-    "???'s Only Friend": "Collectible_Blue_Baby's_Only_Friend_icon.png",
-    'Odd Mushroom': 'Collectible_Odd_Mushroom_(Large)_icon.png',
-  };
-  if (exceptions[name]) return exceptions[name];
-
-  for (const candidate of baseVariants) {
-    const file = `Collectible_${candidate}_icon.png`;
-    if (iconSet.has(file)) return file;
+  if (item && typeof item.icon === 'string' && registryFiles.includes(item.icon)) {
+    return item.icon;
   }
-
-  // Case-insensitive fallback (e.g. "Contract from Below" -> "Contract_From_Below").
-  const lower = new Map(iconFiles.map((f) => [f.toLowerCase(), f]));
-  for (const candidate of baseVariants) {
-    const hit = lower.get(`Collectible_${candidate}_icon.png`.toLowerCase());
-    if (hit) return hit;
-  }
-
   return null;
 }
 
-// Deterministic emit order (sorted by filename) for stable diffs.
-const registryEntries = [...iconSet].filter((f) => items.some((i) => iconFilenameForItem(i) === f)).sort();
-
 const quote = (s) => JSON.stringify(s);
 
-const requireLines = registryEntries
+const requireLines = [...registryFiles]
+  .sort()
   .map((f) => `  ${quote(f)}: require(${quote('../../assets/media/Collectibles/' + f)}),`)
-  .join('\n');
-
-const exceptionLines = Object.entries({
-  "???'s Only Friend": "Collectible_Blue_Baby's_Only_Friend_icon.png",
-  'Odd Mushroom': 'Collectible_Odd_Mushroom_(Large)_icon.png',
-})
-  .map(([name, file]) => `  if (name === ${quote(name)}) return ${quote(file)};`)
   .join('\n');
 
 const output = `/**
@@ -88,9 +52,10 @@ const output = `/**
  * Regenerate with: node scripts/generate-item-icons.mjs
  *
  * Static require() registry of item icons under assets/media/Collectibles,
- * keyed by icon filename, plus the resolver that maps an item to its icon.
- * Generated only for items in items_rebirth.json. Both the registry and the
- * resolver live here so they can never drift apart.
+ * keyed by the id-based icon filename (collectible_<id>_icon.png), plus the
+ * resolver that maps an item from items_rebirth.json to its icon via the
+ * item's \`icon\` field. Generated only for items in items_rebirth.json so the
+ * bundle stays small.
  */
 import { ImageSourcePropType } from 'react-native';
 
@@ -101,36 +66,16 @@ ${requireLines}
 
 const KNOWN = new Set(Object.keys(itemIcons));
 
-const keep = (s: string) => s.replace(/\\//g, '_').replace(/\\s+/g, '_');
-
 /** Resolve the icon filename for an item (or null if no icon exists). */
-export function iconFilenameForItem(item: { image?: string; name?: string }): string | null {
-  if (item.image && KNOWN.has(item.image)) return item.image;
-
-  let name = String(item.name || '').trim();
-  if (!name) return null;
-
-${exceptionLines}
-
-  const variants = [
-    keep(name),
-    keep(name.replace(/^The\\s+/, '')),
-  ];
-
-  for (const candidate of variants) {
-    const file = \`Collectible_\${candidate}_icon.png\`;
-    if (KNOWN.has(file)) return file;
-    const hit = [...KNOWN].find((f) => f.toLowerCase() === file.toLowerCase());
-    if (hit) return hit;
-  }
-
+export function iconFilenameForItem(item: { icon?: string }): string | null {
+  if (item && typeof item.icon === 'string' && KNOWN.has(item.icon)) return item.icon;
   return null;
 }
 `;
 
 writeFileSync(join(dataDir, 'generatedItemIcons.ts'), output);
 
-console.log(`Wrote generatedItemIcons.ts with ${registryEntries.length} icons (${items.length} items).`);
+console.log(`Wrote generatedItemIcons.ts with ${registryFiles.length} icons (${items.length} items).`);
 const unmatched = items.filter((i) => !iconFilenameForItem(i));
 if (unmatched.length) {
   console.log(`WARNING: ${unmatched.length} item(s) have no icon:`, unmatched.map((i) => i.name));

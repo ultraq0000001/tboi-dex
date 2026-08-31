@@ -13,6 +13,7 @@ interface RawItem {
   quote?: string;
   item_pool?: string[];
   image?: string;
+  icon?: string;
   clean_name?: string;
   tags?: string[];
 }

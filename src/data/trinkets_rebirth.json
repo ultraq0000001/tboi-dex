@@ -24,7 +24,7 @@
         "details": "+1 coin spawned."
       }
     ],
-    "icon": "Trinket_Swallowed_Penny_icon.png"
+    "icon": "trinket_1_icon.png"
   },
   {
     "name": "Petrified Poop",
@@ -51,7 +51,7 @@
         "details": "Further increases drop rate by +10%."
       }
     ],
-    "icon": "Trinket_Petrified_Poop_icon.png"
+    "icon": "trinket_2_icon.png"
   },
   {
     "name": "AAA Battery",
@@ -78,7 +78,7 @@
         "details": "Items require one less charge unit in order to fully charge. Can stack up to 2 times."
       }
     ],
-    "icon": "Trinket_AAA_Battery_icon.png"
+    "icon": "trinket_3_icon.png"
   },
   {
     "name": "Broken Remote",
@@ -105,7 +105,7 @@
         "details": "Triggers  Teleport 2.0 instead."
       }
     ],
-    "icon": "Trinket_Broken_Remote_icon.png"
+    "icon": "trinket_4_icon.png"
   },
   {
     "name": "Purple Heart",
@@ -132,7 +132,7 @@
         "details": "Further increases the chances of champions spawning, and increases the chance for specific loot to 66%, or 75% with a tripled trinket."
       }
     ],
-    "icon": "Trinket_Purple_Heart_icon.png"
+    "icon": "trinket_5_icon.png"
   },
   {
     "name": "Broken Magnet",
@@ -159,7 +159,7 @@
         "details": "Additionally pulls in keys, bombs, and hearts if Isaac could pick them up."
       }
     ],
-    "icon": "Trinket_Broken_Magnet_icon.png"
+    "icon": "trinket_6_icon.png"
   },
   {
     "name": "Rosary Bead",
@@ -193,7 +193,8 @@
         "item": "Trinket multipliers",
         "details": "Adds 4 copies of  Rosary to all item pools, and increases the Angel Room chance by +1.2% per multiplier."
       }
-    ]
+    ],
+    "icon": "trinket_7_icon.png"
   },
   {
     "name": "Cartridge",
@@ -227,7 +228,8 @@
         "item": "Trinket multipliers",
         "details": "+5% chance per multiplier."
       }
-    ]
+    ],
+    "icon": "trinket_8_icon.png"
   },
   {
     "name": "Pulse Worm",
@@ -261,7 +263,8 @@
         "item": "Trinket multipliers",
         "details": "Multiplies the maximum tear size."
       }
-    ]
+    ],
+    "icon": "trinket_9_icon.png"
   },
   {
     "name": "Wiggle Worm",
@@ -295,7 +298,8 @@
         "item": "Trinket multipliers",
         "details": "Further increases the stats, and makes the tears' path even more wigglier."
       }
-    ]
+    ],
+    "icon": "trinket_10_icon.png"
   },
   {
     "name": "Ring Worm",
@@ -329,7 +333,8 @@
         "item": "Trinket multipliers",
         "details": "Further increases the stats, and makes the spiral path even larger."
       }
-    ]
+    ],
+    "icon": "trinket_11_icon.png"
   },
   {
     "name": "Flat Worm",
@@ -363,7 +368,8 @@
         "item": "Trinket multipliers",
         "details": "Further increases the tears' width."
       }
-    ]
+    ],
+    "icon": "trinket_12_icon.png"
   },
   {
     "name": "Store Credit",
@@ -397,7 +403,8 @@
         "item": "Trinket multipliers",
         "details": "The golden version has a 25% chance to turn into a regular version rather than disappear."
       }
-    ]
+    ],
+    "icon": "trinket_13_icon.png"
   },
   {
     "name": "Callus",
@@ -431,7 +438,8 @@
         "item": "Trinket multipliers",
         "details": "Reduces damage from Sacrifice Rooms to half a heart.\nTripled effect reduces all damage to half a heart."
       }
-    ]
+    ],
+    "icon": "trinket_14_icon.png"
   },
   {
     "name": "Lucky Rock",
@@ -465,7 +473,8 @@
         "item": "Trinket multipliers",
         "details": "Multiplies the chance for rocks to drop pennies, can drop +1 more penny per multiplier."
       }
-    ]
+    ],
+    "icon": "trinket_15_icon.png"
   },
   {
     "name": "Mom's Toenail",
@@ -499,7 +508,8 @@
         "item": "Trinket multipliers",
         "details": "Adds +1 stomp per multiplier."
       }
-    ]
+    ],
+    "icon": "trinket_16_icon.png"
   },
   {
     "name": "Black Lipstick",
@@ -533,7 +543,8 @@
         "item": "Trinket multipliers",
         "details": "+20% chance, or +33% when tripled."
       }
-    ]
+    ],
+    "icon": "trinket_17_icon.png"
   },
   {
     "name": "Bible Tract",
@@ -567,7 +578,8 @@
         "item": "Trinket multipliers",
         "details": "Further increases the chances of Eternal Hearts appearing."
       }
-    ]
+    ],
+    "icon": "trinket_18_icon.png"
   },
   {
     "name": "Paper Clip",
@@ -601,7 +613,8 @@
         "item": "Trinket multipliers",
         "details": "Also allows Key Blocks to be opened without keys.When tripled, it can also open doors for free."
       }
-    ]
+    ],
+    "icon": "trinket_19_icon.png"
   },
   {
     "name": "Monkey Paw",
@@ -635,7 +648,8 @@
         "item": "Trinket multipliers",
         "details": "+1 Black Heart is dropped."
       }
-    ]
+    ],
+    "icon": "trinket_20_icon.png"
   },
   {
     "name": "Mysterious Paper",
@@ -669,7 +683,8 @@
         "item": "Trinket multipliers",
         "details": "Triggers either both The Polaroid and The Negative, or both A Missing Page and Missing Poster."
       }
-    ]
+    ],
+    "icon": "trinket_21_icon.png"
   },
   {
     "name": "Daemon's Tail",
@@ -703,7 +718,8 @@
         "item": "Trinket multipliers",
         "details": "Blue and Purple Fire Places will drop Black Hearts instead of Soul Hearts."
       }
-    ]
+    ],
+    "icon": "trinket_22_icon.png"
   },
   {
     "name": "Missing Poster",
@@ -737,7 +753,8 @@
         "item": "Trinket multipliers",
         "details": "66% to reveal the Super Secret Room, or 100% with a tripled effect."
       }
-    ]
+    ],
+    "icon": "trinket_23_icon.png"
   },
   {
     "name": "Butt Penny",
@@ -771,7 +788,8 @@
         "item": "Trinket multipliers",
         "details": "Increases the chance of poops dropping coins to 30%, or 40% if tripled."
       }
-    ]
+    ],
+    "icon": "trinket_24_icon.png"
   },
   {
     "name": "Mysterious Candy",
@@ -805,7 +823,8 @@
         "item": "Trinket multipliers",
         "details": "The golden trinket makes the spawned poop golden, while multiple copies increase the chance of the effects occuring."
       }
-    ]
+    ],
+    "icon": "trinket_25_icon.png"
   },
   {
     "name": "Hook Worm",
@@ -839,7 +858,8 @@
         "item": "Trinket multipliers",
         "details": "Further stat increases, the square-wave-like pattern has a bigger amplitude."
       }
-    ]
+    ],
+    "icon": "trinket_26_icon.png"
   },
   {
     "name": "Whip Worm",
@@ -873,7 +893,8 @@
         "item": "Trinket multipliers",
         "details": "Doubles the stat increase."
       }
-    ]
+    ],
+    "icon": "trinket_27_icon.png"
   },
   {
     "name": "Broken Ankh",
@@ -907,7 +928,8 @@
         "item": "Trinket multipliers",
         "details": "The chance is increased to 33%, or 50% if tripled."
       }
-    ]
+    ],
+    "icon": "trinket_28_icon.png"
   },
   {
     "name": "Fish Head",
@@ -941,7 +963,8 @@
         "item": "Trinket multipliers",
         "details": "+1 Blue Fly spawned upon taking damage."
       }
-    ]
+    ],
+    "icon": "trinket_29_icon.png"
   },
   {
     "name": "Pinky Eye",
@@ -975,7 +998,8 @@
         "item": "Trinket multipliers",
         "details": "Sets the base chance to 20%, or 33% if tripled."
       }
-    ]
+    ],
+    "icon": "trinket_30_icon.png"
   },
   {
     "name": "Push Pin",
@@ -1009,7 +1033,8 @@
         "item": "Trinket multipliers",
         "details": "Sets the base chance to 20%, or 33% if tripled."
       }
-    ]
+    ],
+    "icon": "trinket_31_icon.png"
   },
   {
     "name": "Liberty Cap",
@@ -1043,7 +1068,8 @@
         "item": "Trinket multipliers",
         "details": "+25% chance with a trinket multiplier of 2, or 100% with a multiplier of 3."
       }
-    ]
+    ],
+    "icon": "trinket_32_icon.png"
   },
   {
     "name": "Umbilical Cord",
@@ -1077,7 +1103,8 @@
         "item": "Trinket multipliers",
         "details": "The familiar is spawned at 1 heart or less, or 1.5 heart or less if tripled."
       }
-    ]
+    ],
+    "icon": "trinket_33_icon.png"
   },
   {
     "name": "Child's Heart",
@@ -1111,7 +1138,8 @@
         "item": "Trinket multipliers",
         "details": "Sets the room clear chances to 20% or 50% if tripled, and the drop chances to 66% or 100% if tripled."
       }
-    ]
+    ],
+    "icon": "trinket_34_icon.png"
   },
   {
     "name": "Curved Horn",
@@ -1145,7 +1173,8 @@
         "item": "Trinket multipliers",
         "details": "Further increases damage."
       }
-    ]
+    ],
+    "icon": "trinket_35_icon.png"
   },
   {
     "name": "Rusted Key",
@@ -1179,7 +1208,8 @@
         "item": "Trinket multipliers",
         "details": "Sets the room clear chances to 20% or 50% if tripled, and the drop chances to 66% or 100% if tripled."
       }
-    ]
+    ],
+    "icon": "trinket_36_icon.png"
   },
   {
     "name": "Goat Hoof",
@@ -1213,7 +1243,8 @@
         "item": "Trinket multipliers",
         "details": "Further increases speed."
       }
-    ]
+    ],
+    "icon": "trinket_37_icon.png"
   },
   {
     "name": "Mom's Pearl",
@@ -1247,7 +1278,8 @@
         "item": "Trinket multipliers",
         "details": "Increases the chance to 20%."
       }
-    ]
+    ],
+    "icon": "trinket_38_icon.png"
   },
   {
     "name": "Cancer",
@@ -1281,7 +1313,8 @@
         "item": "Trinket multipliers",
         "details": "Further fire rate increase."
       }
-    ]
+    ],
+    "icon": "trinket_39_icon.png"
   },
   {
     "name": "Red Patch",
@@ -1315,7 +1348,8 @@
         "item": "Trinket multipliers",
         "details": "Increases the chance to 33%, or 50% if tripled."
       }
-    ]
+    ],
+    "icon": "trinket_40_icon.png"
   },
   {
     "name": "Match Stick",
@@ -1349,7 +1383,8 @@
         "item": "Trinket multipliers",
         "details": "Sets the room clear chances to 20% or 50% if tripled, and the drop chances to 66% or 100% if tripled."
       }
-    ]
+    ],
+    "icon": "trinket_41_icon.png"
   },
   {
     "name": "Lucky Toe",
@@ -1383,7 +1418,8 @@
         "item": "Trinket multipliers",
         "details": "Further increases the luck stat."
       }
-    ]
+    ],
+    "icon": "trinket_42_icon.png"
   },
   {
     "name": "Cursed Skull",
@@ -1417,7 +1453,8 @@
         "item": "Trinket multipliers",
         "details": "Isaac will teleport to a special room instead. If the trinket is tripled, the special room teleport will happen at 1 heart or less."
       }
-    ]
+    ],
+    "icon": "trinket_43_icon.png"
   },
   {
     "name": "Safety Cap",
@@ -1451,7 +1488,8 @@
         "item": "Trinket multipliers",
         "details": "Sets the room clear chances to 20% or 50% if tripled, and the drop chances to 66% or 100% if tripled."
       }
-    ]
+    ],
+    "icon": "trinket_44_icon.png"
   },
   {
     "name": "Ace of Spades",
@@ -1485,7 +1523,8 @@
         "item": "Trinket multipliers",
         "details": "Sets the room clear chances to 20% or 50% if tripled, and the drop chances to 66% or 100% if tripled."
       }
-    ]
+    ],
+    "icon": "trinket_45_icon.png"
   },
   {
     "name": "Isaac's Fork",
@@ -1519,7 +1558,8 @@
         "item": "Trinket multipliers",
         "details": "Heals 1 full heart, or 1.5 hearts if tripled."
       }
-    ]
+    ],
+    "icon": "trinket_46_icon.png"
   },
   {
     "name": "A Missing Page",
@@ -1553,7 +1593,8 @@
         "item": "Trinket multipliers",
         "details": "Further increases the damage."
       }
-    ]
+    ],
+    "icon": "trinket_48_icon.png"
   },
   {
     "name": "Bloody Penny",
@@ -1587,7 +1628,8 @@
         "item": "Trinket multipliers",
         "details": "Boosts the chances by +25% per multiplier."
       }
-    ]
+    ],
+    "icon": "trinket_49_icon.png"
   },
   {
     "name": "Burnt Penny",
@@ -1621,7 +1663,8 @@
         "item": "Trinket multipliers",
         "details": "Boosts the chances by +25% per multiplier."
       }
-    ]
+    ],
+    "icon": "trinket_50_icon.png"
   },
   {
     "name": "Flat Penny",
@@ -1655,7 +1698,8 @@
         "item": "Trinket multipliers",
         "details": "Boosts the chances by +25% per multiplier."
       }
-    ]
+    ],
+    "icon": "trinket_51_icon.png"
   },
   {
     "name": "Counterfeit Penny",
@@ -1689,7 +1733,8 @@
         "item": "Trinket multipliers",
         "details": "Grants 1 additional cent per multiplier."
       }
-    ]
+    ],
+    "icon": "trinket_52_icon.png"
   },
   {
     "name": "Tick",
@@ -1723,7 +1768,8 @@
         "item": "Trinket multipliers",
         "details": "Further decreases enemies' health and increases healing upon entering a Boss Room. The golden version can be dropped at any time."
       }
-    ]
+    ],
+    "icon": "trinket_53_icon.png"
   },
   {
     "name": "Isaac's Head",
@@ -1762,7 +1808,8 @@
         "item": "BFFS!",
         "details": "x2 damage."
       }
-    ]
+    ],
+    "icon": "trinket_54_icon.png"
   },
   {
     "name": "Maggy's Faith",
@@ -1796,7 +1843,8 @@
         "item": "Trinket multipliers",
         "details": "+1 Eternal Heart."
       }
-    ]
+    ],
+    "icon": "trinket_55_icon.png"
   },
   {
     "name": "Judas' Tongue",
@@ -1830,7 +1878,8 @@
         "item": "Trinket multipliers",
         "details": "Also reduces the cost of Soul Heart deals by 1. If tripled, guarantees Sacrifice Deals to pay out on the first attempt."
       }
-    ]
+    ],
+    "icon": "trinket_56_icon.png"
   },
   {
     "name": "???'s Soul",
@@ -1869,7 +1918,8 @@
         "item": "BFFS!",
         "details": "×2 damage."
       }
-    ]
+    ],
+    "icon": "trinket_57_icon.png"
   },
   {
     "name": "Samson's Lock",
@@ -1903,7 +1953,8 @@
         "item": "Trinket multipliers",
         "details": "Chance is increased to 13%, or 25% if tripled."
       }
-    ]
+    ],
+    "icon": "trinket_58_icon.png"
   },
   {
     "name": "Cain's Eye",
@@ -1937,7 +1988,8 @@
         "item": "Trinket multipliers",
         "details": "+25% base chance per multiplier."
       }
-    ]
+    ],
+    "icon": "trinket_59_icon.png"
   },
   {
     "name": "Eve's Bird Foot",
@@ -1976,7 +2028,8 @@
         "item": "BFFS!",
         "details": "×2 damage."
       }
-    ]
+    ],
+    "icon": "trinket_60_icon.png"
   },
   {
     "name": "The Left Hand",
@@ -2010,6 +2063,7 @@
         "item": "Trinket multipliers",
         "details": "Red Chests drop an additional pickup. If tripled, they can no longer drop a Spider."
       }
-    ]
+    ],
+    "icon": "trinket_61_icon.png"
   }
 ]
