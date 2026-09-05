@@ -26,7 +26,7 @@ instead, listing:
 - Stats
 - Transformations
 
-Wire categories with icons in assets/icons/content/{category_name}-button.webp
+Wire categories with icons in assets/media/Content/{category_name}-button.webp
 
 **Open question:** Items isn't in the list above, but it's the only
 category with working data/screens today. Assuming it still gets its own
@@ -42,7 +42,7 @@ treatment rather than a broken navigation target.
 all 13 categories as tiles (14 total — went with the assumption above since
 it wasn't corrected). Tapping Items opens the existing `ItemListScreen`;
 every other category opens a generic `ComingSoonScreen`. Icons follow the
-requested `assets/icons/content/{category_name}-button.webp` convention via
+requested `assets/media/Content/{category_name}-button.webp` convention via
 a `categoryIcons.ts` registry (same pattern as `itemIcons.ts`) — currently
 empty since no button icons have been supplied yet, so all tiles show
 placeholder initials until icons are added and registered.

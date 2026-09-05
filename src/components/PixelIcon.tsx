@@ -1,6 +1,6 @@
 import { Image, ImageSourcePropType, ImageStyle, Platform, StyleProp, StyleSheet, Text, View } from 'react-native';
 import Constants from 'expo-constants';
-import { itemIcons } from '../data/itemIcons';
+import { icons } from '../data/icons';
 
 const PIXELATED = { imageRendering: 'pixelated' } as StyleProp<ImageStyle>;
 
@@ -44,7 +44,7 @@ export function PixelIcon({
   size: number;
   initials: string;
 }) {
-  const source: ImageSourcePropType | undefined = itemIcons[iconKey];
+  const source: ImageSourcePropType | undefined = icons[iconKey];
 
   // Degrade gracefully: web always uses <Image> with image-rendering: pixelated;
   // native uses the nearest-neighbor module when available (dev build), otherwise

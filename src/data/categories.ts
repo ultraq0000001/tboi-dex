@@ -8,6 +8,7 @@ export interface Category {
 
 export const categories: Category[] = [
   { key: 'items', label: 'Items', iconKey: 'items', implemented: true },
+  { key: 'trinkets', label: 'Trinkets', iconKey: 'trinkets', implemented: true },
   { key: 'achievements', label: 'Achievements', iconKey: 'achievements', implemented: false },
   { key: 'bosses', label: 'Bosses', iconKey: 'bosses', implemented: false },
   { key: 'challenges', label: 'Challenges', iconKey: 'challenges', implemented: false },

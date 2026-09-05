@@ -17,11 +17,11 @@ export function HomeScreen({ navigation }: Props) {
         renderItem={({ item: category }) => (
           <CategoryTile
             category={category}
-            onPress={() =>
-              category.key === 'items'
-                ? navigation.navigate('ItemList')
-                : navigation.navigate('ComingSoon', { title: category.label })
-            }
+            onPress={() => {
+              if (category.key === 'items') return navigation.navigate('ItemList');
+              if (category.key === 'trinkets') return navigation.navigate('TrinketList');
+              navigation.navigate('ComingSoon', { title: category.label });
+            }}
           />
         )}
       />

@@ -4,6 +4,8 @@ import { StatusBar } from 'expo-status-bar';
 import { HomeScreen } from './src/screens/HomeScreen';
 import { ItemListScreen } from './src/screens/ItemListScreen';
 import { ItemDetailScreen } from './src/screens/ItemDetailScreen';
+import { TrinketListScreen } from './src/screens/TrinketListScreen';
+import { TrinketDetailScreen } from './src/screens/TrinketDetailScreen';
 import { ComingSoonScreen } from './src/screens/ComingSoonScreen';
 import { RootStackParamList } from './src/types/navigation';
 
@@ -23,6 +25,12 @@ export default function App() {
           name="ItemDetail"
           component={ItemDetailScreen}
           options={{ title: 'Item Details' }}
+        />
+        <Stack.Screen name="TrinketList" component={TrinketListScreen} options={{ title: 'Trinkets' }} />
+        <Stack.Screen
+          name="TrinketDetail"
+          component={TrinketDetailScreen}
+          options={{ title: 'Trinket Details' }}
         />
         <Stack.Screen
           name="ComingSoon"
