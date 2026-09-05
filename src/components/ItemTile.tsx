@@ -1,13 +1,7 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { Item } from '../types/item';
 import { PixelIcon } from './PixelIcon';
-
-const TYPE_COLORS: Record<Item['type'], string> = {
-  passive: '#4f8ef7',
-  active: '#f75f4f',
-  trinket: '#f7c04f',
-  familiar: '#4ff793',
-};
+import { TYPE_COLORS } from '../data/itemTypes';
 
 export function ItemTile({ item, onPress }: { item: Item; onPress: () => void }) {
   const initials = item.name

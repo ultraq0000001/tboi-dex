@@ -3,16 +3,10 @@ import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { items } from '../data/items';
 import { PixelIcon } from '../components/PixelIcon';
 import { QualityStars } from '../components/QualityStars';
+import { TYPE_LABELS, TYPE_COLORS } from '../data/itemTypes';
 import { RootStackParamList } from '../types/navigation';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'ItemDetail'>;
-
-const TYPE_LABELS: Record<string, string> = {
-  passive: 'Passive Item',
-  active: 'Active Item',
-  trinket: 'Trinket',
-  familiar: 'Familiar',
-};
 
 export function ItemDetailScreen({ route }: Props) {
   const item = items.find((i) => i.id === route.params.itemId);
@@ -35,12 +29,32 @@ export function ItemDetailScreen({ route }: Props) {
       <View style={styles.iconWrap}>
         <PixelIcon iconKey={item.iconKey} size={96} initials={initials} />
       </View>
-      <Text style={styles.name}>{item.name}</Text>
-      <Text style={styles.type}>{TYPE_LABELS[item.type]}</Text>
+      <Text style={styles.name}>
+        #{item.itemId} {item.name}
+      </Text>
+      <Text style={styles.quote}>{item.quote}</Text>
+      <Text style={[styles.type, { color: TYPE_COLORS[item.type] }]}>
+        {TYPE_LABELS[item.type]}
+      </Text>
       <QualityStars quality={item.quality} />
 
       <Text style={styles.sectionLabel}>Effect</Text>
-      <Text style={styles.description}>{item.description}</Text>
+      <Text style={styles.description}>{item.effect}</Text>
+
+      <Text style={styles.sectionLabel}>Unlock</Text>
+      <Text style={styles.description}>{item.unlock}</Text>
+
+      <Text style={styles.sectionLabel}>Synergy</Text>
+      {item.synergies.length > 0 ? (
+        item.synergies.map((synergy, index) => (
+          <View key={`${synergy.item}-${index}`} style={styles.synergy}>
+            {synergy.item ? <Text style={styles.synergyItem}>{synergy.item}</Text> : null}
+            <Text style={styles.synergyDetails}>{synergy.details}</Text>
+          </View>
+        ))
+      ) : (
+        <Text style={styles.description}>None</Text>
+      )}
 
       <Text style={styles.sectionLabel}>Found In</Text>
       <View style={styles.tagRow}>
@@ -50,9 +64,6 @@ export function ItemDetailScreen({ route }: Props) {
           </View>
         ))}
       </View>
-
-      <Text style={styles.sectionLabel}>Unlock</Text>
-      <Text style={styles.description}>{item.unlock}</Text>
     </ScrollView>
   );
 }
@@ -62,8 +73,9 @@ const styles = StyleSheet.create({
   content: { padding: 20 },
   missing: { color: '#888', textAlign: 'center', marginTop: 40 },
   iconWrap: { alignItems: 'center', marginBottom: 12 },
-  name: { color: '#fff', fontSize: 26, fontWeight: '700' },
-  type: { color: '#888', fontSize: 14, marginTop: 4, marginBottom: 10 },
+  name: { color: '#fff', fontSize: 24, fontWeight: '700', textAlign: 'center' },
+  quote: { color: '#888', fontSize: 14, marginTop: 8, marginBottom: 4, textAlign: 'center' },
+  type: { fontSize: 14, marginTop: 2, marginBottom: 10, fontWeight: '600', textAlign: 'center' },
   sectionLabel: {
     color: '#666',
     fontSize: 12,
@@ -81,4 +93,12 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   tagText: { color: '#ccc', fontSize: 13 },
+  synergy: {
+    backgroundColor: '#1e1e1e',
+    borderRadius: 8,
+    padding: 10,
+    marginBottom: 8,
+  },
+  synergyItem: { color: '#4f8ef7', fontSize: 14, fontWeight: '700', marginBottom: 2 },
+  synergyDetails: { color: '#ccc', fontSize: 14, lineHeight: 19 },
 });

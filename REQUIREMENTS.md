@@ -1,36 +1,52 @@
 # TBOI PockeDEX — Requirements & Roadmap
 
-Tracks planned scope beyond the working baseline (searchable Item list/detail,
-~25 seed items, Expo + React Navigation). See `CLAUDE.md` for current
+Tracks planned scope beyond the working baseline (searchable Item + Trinket
+lists/details, Expo + React Navigation). See `CLAUDE.md` for current
 structure/commands.
 
 ## Data set policy
 
-Current ~25-item seed set is intentionally frozen — the user will extend it
-manually over time using the existing `Item` shape in `src/types/item.ts`.
-No further seeding work is planned here.
+The full Rebirth **item** set (~341) and **trinket** set (60) are bundled from
+the scraped JSON datasets (`items_rebirth.json`, `trinkets_rebirth.json`).
+No further seeding work is planned here; schema changes/extensions are driven by
+new requirements.
 
 ## Content scope
 
-### Items (existing, needs a schema gap closed)
+### Items (implemented, one schema gap open)
 
-Item sub-types per the icon structure below: **Passives, Actives, Trinkets,
-Pills**. The current `ItemType` in `src/types/item.ts` is
-`'passive' | 'active' | 'trinket' | 'familiar'` — **it has no `'pill'`
-value**, and `'familiar'` isn't reflected in the icon folder structure the
-user requested. This needs a decision before pills can be added as data:
+Items ship as their own category with full list/detail screens, search, type
+filter chips, and id-based icons. The `ItemType` in `src/types/item.ts` is
+`'passive' | 'active' | 'trinket' | 'familiar'` — trinkets have been split out
+into their **own implemented category** (see below), and the type union no
+longer needs `'trinket'` as an item sub-type (kept for existing data).
+
+Open schema gap: **no `'pill'` value**, and `'familiar'` isn't reflected in the
+icon folder structure the user requested. This needs a decision before pills can
+be added as data:
 
 - Add `'pill'` to `ItemType`.
 - Decide whether `familiar` stays a distinct type (icon folder
   `items/familiars` was created preemptively, matching existing schema) or
   gets folded into `passive`.
 
+### Trinkets (implemented)
+
+Full Trinkets category now (mirrors the Item pattern):
+
+- `src/types/trinket.ts` — `Trinket` type (quote, effect, unlock, quality,
+  pools, addedIn, synergies)
+- `src/data/trinkets.ts` + `src/data/trinkets_rebirth.json` — 60 trinkets
+- Id-based icons under `assets/media/Trinkets/` with an auto-generated registry
+  (`scripts/generate-trinket-icons.mjs`)
+- List/detail screens (`TrinketListScreen`, `TrinketDetailScreen`) + routing
+
 ### New content categories (not started)
 
 Each of the following needs its own TypeScript type, seed data, list/detail
-screens, and a navigation entry — same pattern as `Item`. None of this is
-built yet; treat this as a backlog, roughly in an order that reuses the
-Item list/detail pattern most directly first:
+screens, and a navigation entry — same pattern as `Item`/`Trinket`. None of
+this is built yet; treat this as a backlog, roughly in an order that reuses the
+Item/Trinket list/detail pattern most directly first:
 
 - Achievements
 - Bosses (Standard / Unlockable / Mini)
@@ -49,9 +65,9 @@ Item list/detail pattern most directly first:
 Bosses split into three sub-groups (standard, unlockable, mini) matching
 the icon folders below — same three-way split as Items' sub-types.
 
-A top-level navigation change (tabs or a category picker screen) will be
-needed once more than one content type exists — the current stack only
-knows about Items.
+The current stack navigator knows about Items and Trinkets. A top-level
+navigation change (tabs or a category picker screen) will be needed once more
+than two content types exist.
 
 ## Feature requirements
 
@@ -94,11 +110,11 @@ stash; a new screen lists everything collected so far. Needs:
 
 ## Asset directory structure
 
-Base icon assets live under `assets/icons/`. Folders are created and empty
-(`.gitkeep` placeholders) — drop image files directly into the matching
-folder as they're sourced. No code currently loads from these paths; wiring
-up actual image rendering (replacing the placeholder initials in
-`ItemTile.tsx`) is follow-up work once files exist.
+Two separate trees exist for different purposes:
+
+**`assets/icons/`** — the base/organizational icon tree. Folders are created and
+empty (`.gitkeep` placeholders) — drop source images into the matching folder as
+they're sourced. Nothing currently loads from here at runtime.
 
 ```
 assets/icons/
@@ -125,6 +141,16 @@ assets/icons/
   stats/
   transformations/
 ```
+
+**`assets/media/`** — where rendered assets actually live (wired into code):
+
+- `assets/media/Collectibles/` — item icons, id-based `collectible_<id>_icon.png`
+- `assets/media/Trinkets/` — trinket icons, id-based `trinket_<id>_icon.png`
+- `assets/media/Content/` — category hub button icons `{category_name}-button.webp`
+
+Code loads asset files only through auto-generated static `require()`
+registries (`generatedItemIcons.ts`, `generatedTrinketIcons.ts`,
+`categoryIcons.ts`) — see the icon-generation scripts under `scripts/`.
 
 ## Open questions
 

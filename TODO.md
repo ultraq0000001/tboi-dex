@@ -43,6 +43,43 @@ all 13 categories as tiles (14 total — went with the assumption above since
 it wasn't corrected). Tapping Items opens the existing `ItemListScreen`;
 every other category opens a generic `ComingSoonScreen`. Icons follow the
 requested `assets/media/Content/{category_name}-button.webp` convention via
-a `categoryIcons.ts` registry (same pattern as `itemIcons.ts`) — currently
-empty since no button icons have been supplied yet, so all tiles show
-placeholder initials until icons are added and registered.
+a `categoryIcons.ts` registry (same pattern as `itemIcons.ts`) — initially
+empty since no button icons had been supplied yet, so all tiles showed
+placeholder initials until icons were added and registered.
+
+### 2. Add Trinkets to the category hub
+
+Add a "Trinkets" tile to the home hub, placed directly after "Items", with
+`Trinkets-button.webp` as its element icon (`src/data/categories.ts` +
+`src/data/categoryIcons.ts`).
+
+### 3. Relocate hub icon assets
+
+Move `/assets/icons/content` to `/assets/media/Content` and refactor the
+fast `require()` paths + docs to the new location.
+
+### 4. Implement the Trinkets category (mirrors Items/Collectibles)
+
+Full Trinkets implementation wired end-to-end, following the item pattern:
+
+- `src/types/trinket.ts` — `Trinket` type (id, name, quote, effect, unlock,
+  quality, pools, iconKey, addedIn, synergies)
+- `src/data/trinkets.ts` — loads/normalizes `trinkets_rebirth.json` (60 trinkets)
+- `src/data/generatedTrinketIcons.ts` (via `scripts/generate-trinket-icons.mjs`)
+  + `src/data/trinketIcons.ts` — id-based icon registry under
+  `assets/media/Trinkets/` (`trinket_<id>_icon.png`; 59 of 60 present,
+  "???'s Soul" degrades to initials)
+- `src/data/icons.ts` — merged item + trinket registry consumed by `PixelIcon`
+- `src/components/TrinketTile.tsx`, `src/screens/TrinketListScreen.tsx`
+  (search grid), `src/screens/TrinketDetailScreen.tsx`
+- Routing: `TrinketList`/`TrinketDetail` added to `App.tsx` +
+  `src/types/navigation.ts`; the home Trinkets tile now navigates to the list;
+  `implemented: true` in `categories.ts`
+
+### 5. Redesign the Item Detail page
+
+Reordered Item Detail content to: icon → `#<id>` + name → quote → colored type
+→ quality stars → effect (`item_effect`) → unlock → synergies ("None" when
+empty) → found-in pools. Added `itemId`, `effect`, and `synergies` to the
+`Item` type + `items.ts` mapping; extracted shared `TYPE_LABELS`/`TYPE_COLORS`
+into `src/data/itemTypes.ts` (used by `ItemTile` and the detail screen).

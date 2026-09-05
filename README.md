@@ -19,15 +19,17 @@ TBOI PockeDEX is a cross-platform mobile application developed using Expo. The p
 ```
 App.tsx               # Navigation container + stack
 src/
-├── components/       # Reusable UI components (PixelIcon, ItemTile, CategoryTile, QualityStars)
-├── data/             # Bundled item data (items_rebirth.json, items.ts) + icon registries
-├── screens/          # Home, ItemList, ItemDetail, ComingSoon
-└── types/            # TypeScript type definitions (item, navigation)
+├── components/       # Reusable UI components (PixelIcon, ItemTile, TrinketTile, CategoryTile, QualityStars)
+├── data/             # Bundled item/trinket data (JSON + loaders) + icon registries
+├── screens/          # Home, ItemList, ItemDetail, TrinketList, TrinketDetail, ComingSoon
+└── types/            # TypeScript type definitions (item, trinket, navigation)
 
 assets/
   media/Collectibles/ # Item icon PNG sprites (source for generated registry)
+  media/Trinkets/     # Trinket icon PNG sprites (source for generated registry)
+  media/Content/      # Category hub button icons ({category_name}-button.webp)
   templates/          # HTML/CSS scraping templates
-scripts/              # Data/icon generation tooling (e.g. generate-item-icons.mjs)
+scripts/              # Data/icon generation tooling (generate-item-icons.mjs, generate-trinket-icons.mjs)
 ```
 
 ## Features & Capabilities
@@ -36,34 +38,36 @@ scripts/              # Data/icon generation tooling (e.g. generate-item-icons.m
 - iOS tablet support enabled
 - Custom navigation structure using React Native Stack Navigator
 - Responsive design with dark mode interface
-- 341-item Rebirth dataset with searchable grid + detail view
+- 341-item + 60-trinket Rebirth dataset with searchable grids + detail views
 - Native pixel-perfect (nearest-neighbor) icon rendering via `expo-pixel-perfect`
 - Web scraping capabilities for data fetching
 - TypeScript-first development for type safety
 
 ## Application pages
 
-- **Home** — category hub grid (Items + 13 planned categories; non-Items open a "Coming Soon" placeholder)
+- **Home** — category hub grid (Items + Trinkets + 12 planned categories; non-implemented categories open a "Coming Soon" placeholder)
 - **Items** — searchable 3-column grid with type filter chips (All / Active / Passive / Familiars)
-- **Item Detail** — effect, quality stars, item pools, unlock info
+- **Item Detail** — `#<id>` + name, quote, colored type, quality stars, effect, unlock, synergies, item pools
+- **Trinkets** — searchable 3-column grid
+- **Trinket Detail** — quote, effect, unlock, added-in, quality stars, synergies
 - **Coming Soon** — generic placeholder for categories without data yet
 
 ## Data
 
-The app ships a **~341-item Rebirth dataset** bundled locally in
-`src/data/items_rebirth.json`, loaded statically by `src/data/items.ts` (no
-network calls). Item icons live in `assets/media/Collectibles/` as
-`collectible_<id>_icon.png`.
+The app ships a **~341-item + 60-trinket Rebirth dataset** bundled locally in
+`src/data/items_rebirth.json` and `src/data/trinkets_rebirth.json`, loaded
+statically by `src/data/items.ts` / `src/data/trinkets.ts` (no network calls).
+Item icons live in `assets/media/Collectibles/` as `collectible_<id>_icon.png`;
+trinket icons in `assets/media/Trinkets/` as `trinket_<id>_icon.png`.
 
 Icon registrations are **auto-generated** — don't hand-edit
-`src/data/generatedItemIcons.ts`. After adding/removing icon files or changing
-the item JSON, regenerate it:
+`src/data/generatedItemIcons.ts` or `src/data/generatedTrinketIcons.ts`. After
+adding/removing icon files or changing the data JSON, regenerate them:
 
 ```bash
 node scripts/generate-item-icons.mjs
+node scripts/generate-trinket-icons.mjs
 ```
-
-`src/data/trinkets_rebirth.json` is a candidate dataset not wired up yet.
 
 ## Development
 
