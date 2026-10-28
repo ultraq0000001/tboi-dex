@@ -83,3 +83,22 @@ Reordered Item Detail content to: icon → `#<id>` + name → quote → colored 
 empty) → found-in pools. Added `itemId`, `effect`, and `synergies` to the
 `Item` type + `items.ts` mapping; extracted shared `TYPE_LABELS`/`TYPE_COLORS`
 into `src/data/itemTypes.ts` (used by `ItemTile` and the detail screen).
+
+### 6. Add 6 mocked categories to the hub (alpha scope)
+
+Added mock implementations for Achievements, Familiars, Challenges, Objects, Pickups, Pills:
+
+- `src/types/{achievement,familiar,challenge,object,pickup,pill}.ts` — simple mock types
+- `src/data/{achievements,familiars,challenges,objects,pickups,pills}.ts` — 5 mock entries each
+- `src/screens/*ListScreen.tsx` + `src/screens/*DetailScreen.tsx` — searchable list + detail
+- Routing added to `App.tsx` + `src/types/navigation.ts`
+- `HomeScreen` routes implemented categories to their list screens; others to `ComingSoon`
+- `categories.ts`: marked achievements/challenges/objects/pickups/familiars/pills as `implemented: true`
+- Note: `categoryIcons.ts` does NOT yet require `Familiars-button.webp` / `Pills-button.webp` — those files don't exist in `assets/media/Content/` yet, so tiles fall back to placeholder initials
+
+## Backlog (not yet scheduled)
+
+- EAS cloud build setup: create free expo.dev account, `npx eas-cli login`, `npx eas-cli init` (links project, adds `extra.eas.projectId` to `app.json`), then `npx eas-cli build --profile development --platform android` to produce the alpha APK. EAS has a free ("Starter") tier with a monthly build-minute allowance; check expo.dev/pricing for current limits.
+- Produce alpha .apk (Items + Trinkets + 6 mocked categories).
+- Asset rearrangement: icons live in `assets/icons` (gitignored, ~10 files only); missed icons need downloading, duplicates deleted, assets moved to `assets/media/Content/` for hub buttons and `assets/media/Collectibles/`/`assets/media/Trinkets/` for item sprites.
+- Play Store release signing — lowest priority, separate milestone.

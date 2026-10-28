@@ -40,9 +40,8 @@ yarn-error.*
 /ios
 /android
 
-# do not track icons
-assets/icons/
+# do not track assets (icons, media, templates - generated locally)
+assets/
 
-# do not track utils
-scripts/data-transformer/
-scripts/parser/
+# do not track scripts (data generation tooling - local only)
+scripts/

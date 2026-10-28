@@ -4,5 +4,17 @@ export type RootStackParamList = {
   ItemDetail: { itemId: string };
   TrinketList: undefined;
   TrinketDetail: { trinketId: string };
+  AchievementsList: undefined;
+  AchievementsDetail: { id: string };
+  FamiliarsList: undefined;
+  FamiliarsDetail: { id: string };
+  ChallengesList: undefined;
+  ChallengesDetail: { id: string };
+  ObjectsList: undefined;
+  ObjectsDetail: { id: string };
+  PickupsList: undefined;
+  PickupsDetail: { id: string };
+  PillsList: undefined;
+  PillsDetail: { id: string };
   ComingSoon: { title: string };
 };

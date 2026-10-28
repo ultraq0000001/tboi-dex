@@ -6,6 +6,22 @@ import { RootStackParamList } from '../types/navigation';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Home'>;
 
+type ImplementedCategoryKey = Extract<
+  keyof RootStackParamList,
+  `${string}List`
+>;
+
+const ROUTE_BY_KEY: Partial<Record<string, ImplementedCategoryKey>> = {
+  items: 'ItemList',
+  trinkets: 'TrinketList',
+  achievements: 'AchievementsList',
+  familiars: 'FamiliarsList',
+  challenges: 'ChallengesList',
+  objects: 'ObjectsList',
+  pickups: 'PickupsList',
+  pills: 'PillsList',
+};
+
 export function HomeScreen({ navigation }: Props) {
   return (
     <View style={styles.container}>
@@ -14,16 +30,21 @@ export function HomeScreen({ navigation }: Props) {
         keyExtractor={(category) => category.key}
         numColumns={3}
         contentContainerStyle={styles.list}
-        renderItem={({ item: category }) => (
-          <CategoryTile
-            category={category}
-            onPress={() => {
-              if (category.key === 'items') return navigation.navigate('ItemList');
-              if (category.key === 'trinkets') return navigation.navigate('TrinketList');
-              navigation.navigate('ComingSoon', { title: category.label });
-            }}
-          />
-        )}
+        renderItem={({ item: category }) => {
+          const route = ROUTE_BY_KEY[category.key];
+          return (
+            <CategoryTile
+              category={category}
+              onPress={() => {
+                if (route) {
+                  navigation.navigate(route);
+                } else {
+                  navigation.navigate('ComingSoon', { title: category.label });
+                }
+              }}
+            />
+          );
+        }}
       />
     </View>
   );
